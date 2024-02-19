@@ -1,4 +1,3 @@
-'use client'
 import ContentContainer from "../utils/content-container";
 import Grid from "../utils/grid";
 import RichText from "../utils/rich-text";
@@ -16,7 +15,7 @@ export default function Footer() {
       <ContentContainer>
         <Grid gap={3} xl={3} md={3} xs={1} paddingBottom="3" paddingTop="3">
           <RichText>
-            <img src="../img/hazle-logo.svg"/>
+            <img src="../img/hazle-logo.svg" alt="Footer Logotype Hazle"/>
             <p>Twoja Wizja, Nasza Pasja, Razem Kreujemy Niepowtarzalne Doświadczenia, Które Definiują Twoją Markę</p>
           </RichText>
           <RichText>

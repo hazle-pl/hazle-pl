@@ -147,10 +147,10 @@ const Home = () => {
             <Tab label={'Web Dev.'} >
               <RichText>
                 <div className="badge-list">
-                  <a className="badge">Landingi</a>
-                  <a className="badge">E-Commerce</a>
-                  <a className="badge">Aplikacje www</a>
-                  <a className="badge">Wsparcie techniczne</a>
+                  <span className="badge">Landingi</span>
+                  <span className="badge">E-Commerce</span>
+                  <span className="badge">Aplikacje www</span>
+                  <span className="badge">Wsparcie techniczne</span>
                 </div>
                 <p>Tworzymy wysokiej jakości strony internetowe, opierając się na nowoczesnych praktykach projektowych. Oferujemy kompleksowe rozwiązania, które są kluczowe dla sukcesu Twojego projektu internetowego, uwzględniając mobilność i doświadczenie użytkownika.</p>
                 <p>Nasz zespół kładzie duży nacisk na indywidualność projektów, dbając o to, aby Twoja strona była responsywna i zoptymalizowana pod każde urządzenie i interfejs.</p>
@@ -161,9 +161,9 @@ const Home = () => {
             <Tab label={'Branding'} >
               <RichText>
                 <div className="badge-list">
-                  <a className="badge">Logotyp</a>
-                  <a className="badge">Re-Branding</a>
-                  <a className="badge">Grafiki reklamowe</a>
+                  <span className="badge">Logotyp</span>
+                  <span className="badge">Re-Branding</span>
+                  <span className="badge">Grafiki reklamowe</span>
                 </div>
                 <p>Nasz zespół specjalistów do spraw brandingu doskonale poradzi sobie z prezentacją Twojego biznesu w najlepszym świetle. Bez względu na to, czy chcesz przyciągnąć nowych klientów, przywrócić do życia dawną bazę klientów, czy po prostu doskonalić tożsamość swojej firmy - nasi kreatywni eksperci opracują kompleksową strategię brandingową, która idealnie odzwierciedli unikalne cechy Twojego biznesu.</p>
                 <p>Od identyfikacji korporacyjnej, przez projekty materiałów reklamowych, aż po wytyczne brandu, zapewniamy spersonalizowane podejście, które będzie w pełni odpowiadać potrzebom Twojego przedsiębiorstwa. Nasze rozwiązania nie tylko wyróżnią Cię na rynku, ale także pomogą w budowaniu silnej marki i zwiększeniu lojalności klientów.</p>
@@ -173,8 +173,8 @@ const Home = () => {
             <Tab label={'UI/UX Design'} >
               <RichText>
                 <div className="badge-list">
-                  <a className="badge">Aplikacje mobilne</a>
-                  <a className="badge">Strony internetowe</a>
+                  <span className="badge">Aplikacje mobilne</span>
+                  <span className="badge">Strony internetowe</span>
                 </div>
                 <p>Pomożemy Ci stworzyć optymalny projekt UI oraz inteligentne UX dla Twojego projektu, wykorzystując bogate doświadczenie naszego zespołu ds. interfejsu użytkownika (UI) i doświadczenia użytkownika (UX). Nasze usługi obejmują kompleksową analizę potrzeb użytkowników, szczegółowe projektowanie interfejsu oraz skuteczną implementację rozwiązań dostosowanych do Twoich unikalnych wymagań.</p>
                 <p>Niezależnie od tego, czy posiadasz już istniejące wytyczne marki, czy też potrzebujesz stworzenia niestandardowej biblioteki komponentów, możesz polegać na naszym zespole. Jesteśmy gotowi dostarczyć Ci elegancki i czytelny interfejs użytkownika, idealnie odpowiadający Twoim potrzebom oraz przyciągający uwagę użytkowników swoim estetycznym designem i intuicyjnymi funkcjonalnościami.</p>
@@ -185,9 +185,9 @@ const Home = () => {
             <Tab label={'Marketing'} >
               <RichText>
                 <div className="badge-list">
-                  <a className="badge">Strategie Marketingowe</a>
-                  <a className="badge">Kampanie Reklamowe</a>
-                  <a className="badge">Analiza Rynku</a>
+                  <span className="badge">Strategie Marketingowe</span>
+                  <span className="badge">Kampanie Reklamowe</span>
+                  <span className="badge">Analiza Rynku</span>
                 </div>
                 <p>Specjalizujemy się w tworzeniu wysokiej jakości strategii marketingowych dostosowanych do podniesienia obecności Twojej marki w Internecie. Zrozumieliśmy istotę nowoczesnych zasad projektowania w dzisiejszym świecie cyfrowym, dlatego nasz doświadczony zespół skupia się na tworzeniu atrakcyjnych stron internetowych, które priorytetowo traktują doświadczenia z myślą o urządzeniach mobilnych.</p>
                 <p>Bez względu na to, czy wdrażasz nowy projekt, czy też odnawiasz istniejący, nasze zaangażowanie w responsywne projektowanie gwarantuje, że Twoja strona internetowa będzie się wyróżniać na każdym urządzeniu i interfejsie. Poprzez wplecenie esencji Twojej marki w każdy aspekt procesu projektowania, zapewniamy, że Twoja nowa strona internetowa będzie rezonować z Twoją grupą docelową, generować istotne zaangażowanie i ostatecznie zwiększać wyniki sprzedaży.</p>
