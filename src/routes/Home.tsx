@@ -7,6 +7,7 @@ import Grid from "../utils/grid";
 import RichText from "../utils/rich-text";
 import Section from "../utils/section";
 import HeroBanner from "../components/hero-banner";
+import InfiniteCarousel from "../components/InfiniteCarousel";
 
 const Home = () => {
 
@@ -83,6 +84,7 @@ const Home = () => {
     };
   }, []);
 
+
   return (
     <>
     <HeroBanner>
@@ -91,6 +93,18 @@ const Home = () => {
         <a href="#about" className="primary-btn">Dowiedź się więcej<i className="fa-solid fa-arrow-right"></i></a>
       </RichText>
     </HeroBanner>
+    <Section background="neutral-300" paddingBottom="3" paddingTop="3">
+        <InfiniteCarousel scrollDirection="left">
+          <img src="../../img/Tripply.jpg" alt="Tripply design" loading="lazy" />
+          <img src="../../img/Superspas.jpg" alt="Superspas design" loading="lazy" />
+          <img src="../../img/TurboHive.jpg" alt="TurboHive design" loading="lazy" />
+        </InfiniteCarousel>
+        <InfiniteCarousel paddingBottom='3' paddingTop='3' scrollDirection="right">
+          <img src="../../img/Tripply.jpg" alt="Tripply design" loading="lazy" />
+          <img src="../../img/Superspas.jpg" alt="Superspas design" loading="lazy" />
+          <img src="../../img/TurboHive.jpg" alt="TurboHive design" loading="lazy" />
+        </InfiniteCarousel>
+      </Section>
     <Section id="about" background="neutral-300" paddingBottom="3" paddingTop="0">
       <ContentContainer>
         <Grid gap={3} paddingBottom='3' paddingTop='3'>
