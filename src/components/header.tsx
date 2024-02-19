@@ -66,9 +66,9 @@ const Header = () => {
       </div>
       <div className={`menu ${isNavOpen ? 'open' : ''}`}>
         <ul>
-          {/* <li><a onClick={() => setIsNavOpen(!isNavOpen)} href={`#top`}>home</a></li>
-          <li><a onClick={() => setIsNavOpen(!isNavOpen)} href={`#about`}>about</a></li>
-          <li><a onClick={() => setIsNavOpen(!isNavOpen)} href={`#contact`}>contact</a></li> */}
+          <li><a onClick={() => setIsNavOpen(!isNavOpen)} target="_blank" href="https://www.instagram.com/hazle.pl/">Instagram</a></li>
+          <li><a onClick={() => setIsNavOpen(!isNavOpen)} target="_blank" href="https://facebook.com/hazle.studio">Facebook</a></li>
+          <li><a onClick={() => setIsNavOpen(!isNavOpen)} href={`mailto:kontakt@hazle.pl`}>Mail</a></li>
         </ul>
       </div>
     </header>

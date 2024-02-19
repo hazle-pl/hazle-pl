@@ -30,10 +30,10 @@ export default function Footer() {
             </ul>
           </RichText>
           <RichText>
-            <p><b>Połącz się</b></p>
+            <p><b>Znajdz nas</b></p>
             <ul>
-                <li><a target="_blank" href="https://www.instagram.com/hazle.pl/">Instagram</a></li>
-                <li><a target="_blank" href="https://facebook.com/hazle.studio">Facebook</a></li>
+              <li><a target="_blank" href="https://www.instagram.com/hazle.pl/">Instagram</a></li>
+              <li><a target="_blank" href="https://facebook.com/hazle.studio">Facebook</a></li>
               <li><a href={`mailto:kontakt@hazle.pl`}>Mail</a></li>
             </ul>
           </RichText>
