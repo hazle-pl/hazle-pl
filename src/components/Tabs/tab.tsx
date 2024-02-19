@@ -2,6 +2,7 @@
 import React, { ReactNode } from 'react';
 
 interface TabProps {
+  label?: string;
   children: ReactNode;
 }
 
