@@ -8,6 +8,7 @@ import React from 'react';
 import HeroBanner from '@/components/HeroBanner';
 import TeaserCard from '@/components/TeaserCard';
 import FixedSideMenu from '@/components/FixedSideMenu';
+import HeroBannerV2 from '@/components/HeroBanner-v2';
 
 const Home: React.FC = () => {
 
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
   return (
     <Layout>
       <FixedSideMenu />
+      <HeroBannerV2/>
       <HeroBanner content={`<h1>Hero Banner</h1><p>To jest przykładowy paragraf zawierający <i>kursywę</i> i dodatkowy tekst.</p><button>Kliknij mnie</button>`} imageSrc="/assets/preview.jpg" background="neutral-300" size="md"/>
       <Container anchor="Sekcja-1" paddingTop="5" paddingBottom="5" background="neutral-100">
         container padding 5 bg primary-300

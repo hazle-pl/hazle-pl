@@ -1,8 +1,8 @@
 :root {
 //Primary colors
     --primary-100: rgb(225, 245, 254);
-    --primary-300: rgb(144, 202, 249);
-    --primary-500: rgb(33, 150, 243);
+    --primary-300: #FF7744;
+    --primary-500: #FF6932;
     --primary-700: rgb(25, 118, 210);
 
 //Secondary colors
@@ -17,13 +17,8 @@
     --neutral-300: rgb(200, 200, 200);
     --neutral-500: rgb(112, 112, 112);
     --neutral-700: rgb(80, 80, 80);
-    --neutral-900: rgb(40, 40, 40);
+    --neutral-900: #222222;
     --neutral-1000: rgb(0, 0, 0);
-}
-
-//Dark mode
-body.dark {
-    
 }
 
 
