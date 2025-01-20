@@ -1,0 +1,46 @@
+.hero-banner {
+
+    &.size-xs {
+        height: 30vh;
+    }
+    
+    &.size-md {
+        height: 50vh;
+    }
+
+    &.size-xl {
+        height: 80vh;
+    }
+
+    &.size-full {
+        height: 100vh;
+    }
+
+    @media (max-width: $mobile) { 
+        height: 100% !important;
+    }
+
+    .content-wrapper {
+        display: flex;
+        gap: $size-3;
+        height: 100%;
+        align-items: center;
+        padding: $size-3;
+
+        @media (max-width: $mobile) { 
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        .hero-image {
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}

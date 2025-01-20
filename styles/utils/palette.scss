@@ -1,0 +1,89 @@
+:root {
+//Primary colors
+    --primary-100: rgb(225, 245, 254);
+    --primary-300: rgb(144, 202, 249);
+    --primary-500: rgb(33, 150, 243);
+    --primary-700: rgb(25, 118, 210);
+
+//Secondary colors
+    --secondary-100: rgb(220, 248, 222);
+    --secondary-300: rgb(129, 199, 132);
+    --secondary-500: rgb(76, 175, 80);
+    --secondary-700: rgb(56, 142, 60);
+
+//Neutral colors
+    --neutral-000: rgb(255, 255, 255);
+    --neutral-100: rgb(240, 240, 240);
+    --neutral-300: rgb(200, 200, 200);
+    --neutral-500: rgb(112, 112, 112);
+    --neutral-700: rgb(80, 80, 80);
+    --neutral-900: rgb(40, 40, 40);
+    --neutral-1000: rgb(0, 0, 0);
+}
+
+//Dark mode
+body.dark {
+    
+}
+
+
+//Background color classes
+.bg-primary-100 {
+    background-color: var(--primary-100);
+}
+
+.bg-primary-300 {
+    background-color: var(--primary-300);
+}
+
+.bg-primary-500 {
+    background-color: var(--primary-500);
+}
+
+.bg-primary-700 {
+    background-color: var(--primary-700);
+}
+
+.bg-secondary-100 {
+    background-color: var(--secondary-100);
+}
+
+.bg-secondary-300 {
+    background-color: var(--secondary-300);
+}
+
+.bg-secondary-500 {
+    background-color: var(--secondary-500);
+}
+
+.bg-secondary-700 {
+    background-color: var(--secondary-700);
+}
+
+.bg-neutral-000 {
+    background-color: var(--neutral-000);
+}
+
+.bg-neutral-100 {
+    background-color: var(--neutral-100);
+}
+
+.bg-neutral-300 {
+    background-color: var(--neutral-300);
+}
+
+.bg-neutral-500 {
+    background-color: var(--neutral-500);
+}
+
+.bg-neutral-700 {
+    background-color: var(--neutral-700);
+}
+
+.bg-neutral-900 {
+    background-color: var(--neutral-900);
+}
+
+.bg-neutral-1000 {
+    background-color: var(--neutral-1000);
+}
