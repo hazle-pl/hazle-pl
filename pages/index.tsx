@@ -9,35 +9,66 @@ import HeroBanner from '@/components/HeroBanner';
 import TeaserCard from '@/components/TeaserCard';
 import RichText from '@/components/RichText';
 import Link from 'next/link';
+import InNumbers from '@/components/inNumbers';
 
 const Home: React.FC = () => {
 
 
   return (
     <Layout>
-      <HeroBanner content={`<h1>Bringing Your</br><span class="color-primary-500 italic">dream</span> Into Reality</h1><p>We increase revenue and ensure sustainable long-term growth for your business through powerful Webflow websites.</p><a class="button primary" href="/#contact">Contact us</a>`} background="neutral-900" size="auto"/>
+      <HeroBanner content={`
+      <h1>Przekształcamy</br>
+      <span class="color-primary-500 italic">Marzenia</span> w Rzeczywistość</h1>
+      <p>Specjalizujemy się w projektowaniu stron internetowych, aplikacji webowych oraz kompleksowych usługach marketingowych i graficznych, od logotypów po materiały wizualne, które wzmacniają wizerunek Twojej marki.</p>
+      <a class="button primary" href="/#contact">Napisz do nas</a>
+      `} 
+      background="neutral-900" 
+      size="auto"/>
+      <Container anchor="Sekcja-2" paddingTop="5" paddingBottom="5" background="neutral-900">
+        <RichText>
+          <h3 className="pb-2">Hazle w liczbach</h3>
+        </RichText>
+        <InNumbers/>
+      </Container>
       <Container anchor="how-we-work" paddingTop="5" paddingBottom="5" background="neutral-900">
         <RichText>
-          <h3 className="pb-2">How We Work</h3>
+          <h3 className="pb-2">Jak pracujemy?</h3>
         </RichText>
         <Grid xs="1" md="2" xl="2">
           <RichText>
-            <p className="big">Get a dedicated design team at fraction of the cost.</p>
+            <p className="big">Pomysł, realizacja, publikacja – prosta droga do osiągnięcia Twoich celów online.</p>
           </RichText>
           <RichText>
-            <p className='pb-2'>Grow your brand with high-quality design for a flat
-              monthly fee. Work with senior designers.
-              Subscribe and make as many requests as you
-              need - no limits.</p>
-              <Link className="button primary" href="#">Learn more</Link>
+            <p className='pb-2'>Trzy etapy pozwalają nam skupić się na tym, co naprawdę ważne – od stworzenia solidnych fundamentów,
+              przez dokładne wykonanie, aż po dopracowaną publikację. Dzięki temu każdy projekt jest przemyślany i
+              dopracowany w najmniejszym szczególe. To prosty proces, który gwarantuje efekty!</p>
+              <Link className="button primary" href="#">Napisz do nas</Link>
           </RichText>
         </Grid>
       </Container>
-      <Container anchor="Sekcja-2" paddingTop="5" paddingBottom="5" background="neutral-300">
-        container padding 4 bg secondary-500
+      <Container paddingBottom="5" background="neutral-900">
+        <Grid xs="1" md="3" xl="3">
+          <RichText>
+            <span className="number-box">1</span>
+            <h4>Kreatywne Fundamenty</h4>
+            <p>Każdy projekt zaczyna się od inspiracji. Wspólnie analizujemy Twoje potrzeby i cele, tworząc koncepcję, która idealnie oddaje charakter Twojej marki.</p>
+          </RichText>
+          <RichText>
+            <span className="number-box">2</span>
+            <h4>Profesjonalne Wykonanie</h4>
+            <p>Przekuwamy pomysł w rzeczywistość. Projektujemy, wdrażamy i optymalizujemy, dbając o każdy detal, aby efekt był zarówno estetyczny, jak i funkcjonalny.</p>
+          </RichText>
+          <RichText>
+            <span className="number-box">3</span>
+            <h4>Sukces Twojej Marki</h4>
+            <p>Gdy wszystko jest gotowe, wdrażamy projekt na żywo. Zapewniamy wsparcie techniczne, by Twoja marka działała sprawnie i zyskała widoczność.</p>
+          </RichText>
+        </Grid>
       </Container>
       <Container anchor="Sekcja-3" paddingTop="5" paddingBottom="5" background="neutral-100">
-        container padding 5 bg primary-500
+        <RichText>
+          <h2 className="pb-2">Nasza praca</h2>
+        </RichText>
       </Container>
       <Container anchor="Sekcja-4" paddingTop="5" paddingBottom="5" background="neutral-300">
         <Grid xs="2" md="3" xl="6">
