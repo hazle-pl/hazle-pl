@@ -1,16 +1,22 @@
 import React from "react";
 
 interface RichTextProps {
-  content: string;
+  content?: string;
+  children?: React.ReactNode;
 }
 
-const RichText: React.FC<RichTextProps> = ({ content }) => {
-  return (
-    <div
-      className="rich-text"
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
-  );
+const RichText: React.FC<RichTextProps> = ({ content, children }) => {
+  
+  if (content) {
+    return (
+      <div
+        className="rich-text"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+    );
+  }
+
+  return <div className="rich-text">{children}</div>;
 };
 
 export default RichText;
