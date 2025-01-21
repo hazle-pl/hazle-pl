@@ -15,8 +15,8 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
   content = "Lorem ipsum",
   background = "primary-100",
   backgroundImage,
-  imageSrc = "/assets/preview.jpg",
-  size = "md",
+  imageSrc,
+  size = "auto",
   imageAlt = "Hero image",
 }) => {
   return (

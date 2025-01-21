@@ -7,17 +7,13 @@ import Layout from '@/components/Layout';
 import React from 'react';
 import HeroBanner from '@/components/HeroBanner';
 import TeaserCard from '@/components/TeaserCard';
-import FixedSideMenu from '@/components/FixedSideMenu';
-import HeroBannerV2 from '@/components/HeroBanner-v2';
 
 const Home: React.FC = () => {
 
 
   return (
     <Layout>
-      <FixedSideMenu />
-      <HeroBannerV2/>
-      <HeroBanner content={`<h1>Hero Banner</h1><p>To jest przykładowy paragraf zawierający <i>kursywę</i> i dodatkowy tekst.</p><button>Kliknij mnie</button>`} imageSrc="/assets/preview.jpg" background="neutral-300" size="md"/>
+      <HeroBanner content={`<h1>Bringing Your</br><span class="color-primary-500 italic">dream</span> Into Reality</h1><p>We increase revenue and ensure sustainable long-term growth for your business through powerful Webflow websites.</p><a class="button primary" href="/#contact">Contact us</a>`} background="neutral-900" size="auto"/>
       <Container anchor="Sekcja-1" paddingTop="5" paddingBottom="5" background="neutral-100">
         container padding 5 bg primary-300
       </Container>
