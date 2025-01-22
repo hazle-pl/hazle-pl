@@ -22,7 +22,7 @@ const Gallery: React.FC<GalleryProps> = ({ children }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0, // Element musi być w 50% widoczny, aby uzyskać efekt
+      threshold: 0.1,
     });
 
     if (galleryRef.current) {
@@ -41,19 +41,23 @@ const Gallery: React.FC<GalleryProps> = ({ children }) => {
 
   return (
     <div ref={galleryRef} className="gallery">
-      {React.Children.map(children, (child, index) => (
-        <div
-          className={`column column${(index % 4) + 1}`}
-          key={index}
-          style={{
-            transform: isVisible
-              ? `translateY(${scrollY * 0.1}px)` // Uniform scroll movement for all columns
-              : 'translateY(0)', // No movement if not visible
-          }}
-        >
-          {child}
-        </div>
-      ))}
+      {React.Children.map(children, (child, index) => {
+        const isColumn1Or3 = index % 4 === 0 || index % 4 === 2;
+
+        return (
+          <div
+            className={`column column${(index % 4) + 1}`}
+            key={index}
+            style={{
+              transform: isVisible
+                ? `translateY(${scrollY * (isColumn1Or3 ? 0.05 : -0.05)}px)`
+                : 'translateY(0)',
+            }}
+          >
+            {child}
+          </div>
+        );
+      })}
     </div>
   );
 };

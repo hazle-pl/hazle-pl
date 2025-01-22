@@ -12,6 +12,7 @@ import Link from 'next/link';
 import InNumbers from '@/components/inNumbers';
 import Image from 'next/image';
 import Gallery from '@/components/Gallery';
+import ContainerNoWrapper from '@/components/ContainerNoWrapper';
 
 const Home: React.FC = () => {
 
@@ -31,7 +32,7 @@ const Home: React.FC = () => {
           <h2 className="custom-center-text pb-3">Zaufali nam</h2>
         </RichText>
         <Box padding='3' background='neutral-700'>
-          <Grid xs="2" md="5" xl="8" justify="center">
+          <Grid xs="2" md="5" xl="7" justify="center">
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-infra-bruk.png" height={50} width={100}/>
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-awt.png" height={50} width={100}/>
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-mogilno-run.png" height={50} width={100}/>
@@ -39,7 +40,6 @@ const Home: React.FC = () => {
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-turbohive.png" height={50} width={100}/>
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-jp-kop.png" height={50} width={100}/>
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-pk-bruk.svg" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/logo-infra-bruk.png" height={50} width={100}/>
           </Grid>
         </Box>
       </Container>
@@ -84,50 +84,24 @@ const Home: React.FC = () => {
           </RichText>
         </Grid>
       </Container>
-      <Container anchor="Sekcja-3" paddingTop="5" paddingBottom="5" background="neutral-100">
+      <Container paddingTop="5" paddingBottom="5" background="neutral-100">
         <RichText justify='center'>
           <h2 className="center">Nasze Projekty</h2>
-          <p className='center pb-5 width-700'>Pomagamy naszym klientom zwiększać zyski dzięki przejrzystym i profesjonalnym stronom internetowym i nie tylko.</p>
+          <p className='center width-700'>Pomagamy naszym klientom zwiększać zyski dzięki przejrzystym i profesjonalnym stronom internetowym i nie tylko.</p>
         </RichText>
-        <Gallery>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
-        </Gallery>
       </Container>
+      <ContainerNoWrapper paddingTop="2" paddingBottom="5" background="neutral-100">
+      <Gallery>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        </Gallery>
+      </ContainerNoWrapper>
       <Container anchor="Sekcja-4" paddingTop="5" paddingBottom="5" background="neutral-300">
         <Grid xs="2" md="3" xl="6">
           <TeaserCard background="neutral-100"/>
