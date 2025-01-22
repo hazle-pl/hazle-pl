@@ -3,20 +3,21 @@ import React from "react";
 interface RichTextProps {
   content?: string;
   children?: React.ReactNode;
+  justify?: string;
 }
 
-const RichText: React.FC<RichTextProps> = ({ content, children }) => {
+const RichText: React.FC<RichTextProps> = ({ content, children, justify }) => {
   
   if (content) {
     return (
       <div
-        className="rich-text"
+        className={`rich-text ${justify}`}
         dangerouslySetInnerHTML={{ __html: content }}
       />
     );
   }
 
-  return <div className="rich-text">{children}</div>;
+  return <div className={`rich-text ${justify}`}>{children}</div>;
 };
 
 export default RichText;

@@ -1,0 +1,18 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .column {
+    transition: transform 0.5s ease-out;
+    will-change: transform;
+  }
+  
+  .column1, .column3 {
+    background-color: red; /* Add some visibility for debugging */
+  }
+  

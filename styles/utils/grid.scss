@@ -2,6 +2,10 @@
 .grid {
     display: grid;
     gap: $size-3;
+
+    &.center {
+      justify-items: center;
+    }
   }
   
 //Grid settings desktop

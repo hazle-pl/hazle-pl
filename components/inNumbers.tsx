@@ -21,6 +21,7 @@ const InNumbers: React.FC = () => {
   };
 
   useEffect(() => {
+
     if (isVisible) {
       countUp(20, setNumber1);
       countUp(1000, setNumber2);

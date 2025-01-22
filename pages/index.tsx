@@ -10,6 +10,8 @@ import TeaserCard from '@/components/TeaserCard';
 import RichText from '@/components/RichText';
 import Link from 'next/link';
 import InNumbers from '@/components/inNumbers';
+import Image from 'next/image';
+import Gallery from '@/components/Gallery';
 
 const Home: React.FC = () => {
 
@@ -24,6 +26,23 @@ const Home: React.FC = () => {
       `} 
       background="neutral-900" 
       size="auto"/>
+      <Container anchor="Sekcja-2" paddingBottom="3" background="neutral-900">
+        <RichText>
+          <h2 className="custom-center-text pb-3">Zaufali nam</h2>
+        </RichText>
+        <Box padding='3' background='neutral-700'>
+          <Grid xs="2" md="5" xl="8" justify="center">
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-infra-bruk.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-awt.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-mogilno-run.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-superspas.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-turbohive.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-jp-kop.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-pk-bruk.svg" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/logo-infra-bruk.png" height={50} width={100}/>
+          </Grid>
+        </Box>
+      </Container>
       <Container anchor="Sekcja-2" paddingTop="5" paddingBottom="5" background="neutral-900">
         <RichText>
           <h3 className="pb-2">Hazle w liczbach</h3>
@@ -66,9 +85,48 @@ const Home: React.FC = () => {
         </Grid>
       </Container>
       <Container anchor="Sekcja-3" paddingTop="5" paddingBottom="5" background="neutral-100">
-        <RichText>
-          <h2 className="pb-2">Nasza praca</h2>
+        <RichText justify='center'>
+          <h2 className="center">Nasze Projekty</h2>
+          <p className='center pb-5 width-700'>Pomagamy naszym klientom zwiększać zyski dzięki przejrzystym i profesjonalnym stronom internetowym i nie tylko.</p>
         </RichText>
+        <Gallery>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={300} width={300}/>
+        </Gallery>
       </Container>
       <Container anchor="Sekcja-4" paddingTop="5" paddingBottom="5" background="neutral-300">
         <Grid xs="2" md="3" xl="6">

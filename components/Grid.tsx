@@ -5,13 +5,15 @@ interface ContainerProps {
   xs?: string;
   md?: string;
   xl?: string;
+  justify?: string;
 }
 
-const Grid: React.FC<ContainerProps> = ({ children, xs, md, xl }) => {
+const Grid: React.FC<ContainerProps> = ({ children, xs, md, xl, justify }) => {
   const classes = [
     xs ? `xs-${xs}` : '',
     md ? `md-${md}` : '',
     xl ? `xl-${xl}` : '',
+    justify ? `center` : '',
   ]
     .filter(Boolean)
     .join(' ');
