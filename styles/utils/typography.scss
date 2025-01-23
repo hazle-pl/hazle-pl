@@ -32,6 +32,14 @@ h1,h2,h3,h4,h5,h6,a,p {
     }
 }
 
+.badge {
+    padding: $size-2 $size-3;
+    border-radius: $size-1;
+    background-color: var(--primary-500);
+    color: var(--neutral-900);
+    font-weight: 500;
+}
+
 .italic {
     font-style: italic;
 }
@@ -98,6 +106,7 @@ h1,h2,h3,h4,h5,h6,a,p {
         margin-bottom: $size-1;
         color: var(--primary-500);
         font-weight: 400;
+        text-transform: uppercase;
     }
 
     h4 {

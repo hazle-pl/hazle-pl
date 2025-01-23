@@ -53,4 +53,32 @@
     .xs-2 { grid-template-columns: repeat(2, 1fr); }
     .xs-1 { grid-template-columns: repeat(1, 1fr); }
   }
+
+
+  .grid-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    tr {
+      &:not(:last-child) td {
+        border-bottom: 2px solid var(--primary-500-10);
+      }
+
+      td {
+        padding: $size-3;
+        text-align: center;
+    
+        &:not(:last-child) {
+          border-right: 2px solid var(--primary-500-10);
+          
+        }
+      }
+    }
+
+
+  tr:not(:last-child) td {
+    border-bottom: 2px solid var(--primary-500-10);
+  }
+  }
   

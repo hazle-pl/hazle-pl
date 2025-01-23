@@ -27,7 +27,7 @@ const Home: React.FC = () => {
       `} 
       background="neutral-900" 
       size="auto"/>
-      <Container anchor="Sekcja-2" paddingBottom="3" background="neutral-900">
+      <Container paddingBottom="3" background="neutral-900">
         <RichText>
           <h2 className="custom-center-text pb-3">Zaufali nam</h2>
         </RichText>
@@ -102,11 +102,59 @@ const Home: React.FC = () => {
         <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
         </Gallery>
       </ContainerNoWrapper>
-      <Container anchor="Sekcja-4" paddingTop="5" paddingBottom="5" background="neutral-300">
-        <Grid xs="2" md="3" xl="6">
-          <TeaserCard background="neutral-100"/>
-          <TeaserCard background="neutral-100"/>
+      <Container paddingTop="5" paddingBottom="5" background="neutral-900">
+        <RichText>
+          <h3 className="center">Co potrafimy?</h3>
+          <h2 className="pb-3 center">Możemy ci pomóc w...</h2>
+        </RichText>
+        <Box justify="center" display="flex">
+          <span className="badge">Strony internetowe</span>
+          <span className="badge">Social media</span>
+          <span className="badge">Reklama & marketing</span>
+          <span className="badge">Design system</span>
+          <span className="badge">Logo & branding</span>
+          <span className="badge">Aplikacje web</span>
+          <span className="badge">Projekty graficzne</span>
+          <span className="badge">SEO</span>
+          <span className="badge">Audyt UX</span>
+          <span className="badge">Sklepy internetowe</span>
+          <span className="badge">Animacje i wideo</span>
+          <span className="badge">Analiza konkurencji</span>
+        </Box>
+      </Container>
+      <Container paddingBottom="5" background="neutral-900">
+        <RichText>
+          <h3 className="pb-2">Dlaczego warto z nami wspópracować?</h3>
+        </RichText>
+        <Grid xs="1" md="2" xl="2">
+          <RichText>
+            <p className="big">Zapewniamy profesjonalne rozwiązania dopasowane do Twoich potrzeb.</p>
+          </RichText>
+          <RichText>
+            <p className='pb-2'>Twój sukces jest naszym priorytetem, dlatego dokładamy wszelkich starań, aby wspierać Cię na każdym etapie współpracy. Dzięki pracy z naszymi ekspertami będziesz mógł wyróżnić się na rynku i zyskać przewagę konkurencyjną. Nasze doświadczenie i zaangażowanie pomogą Ci osiągnąć cele, które postawisz przed sobą.</p>
+          </RichText>
         </Grid>
+      </Container>
+      <Container paddingBottom="5" background="neutral-900">
+      <table className="grid-table">
+        <tbody>
+          <tr>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+          </tr>
+          <tr>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+          </tr>
+          <tr>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+            <td><TeaserCard /></td>
+          </tr>
+        </tbody>
+      </table>
       </Container>
       <Container anchor="Sekcja-5" paddingTop="5" paddingBottom="5" background="neutral-100">
         <Accordion
