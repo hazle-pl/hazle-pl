@@ -6,7 +6,6 @@ import Accordion from '@/components/Accordion';
 import Layout from '@/components/Layout';
 import React from 'react';
 import HeroBanner from '@/components/HeroBanner';
-import TeaserCard from '@/components/TeaserCard';
 import RichText from '@/components/RichText';
 import Link from 'next/link';
 import InNumbers from '@/components/inNumbers';
@@ -139,19 +138,73 @@ const Home: React.FC = () => {
       <table className="grid-table">
         <tbody>
           <tr>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-infinity"/>
+                <h4>Elastyczność na żądanie</h4>
+                <p>Zgłaszaj swoje potrzeby w prosty sposób, a my zajmiemy się realizacją projektów krok po kroku.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-ranking-star"/>
+                <h4>Najwyższa jakość projektów</h4>
+                <p>Jesteśmy doświadczonymi specjalistami, którzy zapewnią profesjonalne wykonanie każdego zadania.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-brands fa-react"/>
+                <h4>Technologie skrojone na miarę</h4>
+                <p>Tworzymy strony i aplikacje dostosowane do Twoich wymagań, korzystając z najnowszych technologii webowych.</p>
+              </RichText>
+            </td>
           </tr>
           <tr>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-list-check"/>
+                <h4>Personalizacja projektów</h4>
+                <p>Każdy projekt tworzymy od podstaw, dopasowując go do Twojej marki i potrzeb biznesowych.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-lightbulb"/>
+                <h4>Kreatywność na najwyższym poziomie</h4>
+                <p>Proponujemy unikalne rozwiązania graficzne i marketingowe, które wyróżnią Twoją markę na rynku.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-users-gear"/>
+                <h4>Doświadczenie ekspertów</h4>
+                <p>Nasz zespół to profesjonaliści z wieloletnim doświadczeniem, którzy dostarczą Ci najwyższej jakości rezultaty.</p>
+              </RichText>
+            </td>
           </tr>
           <tr>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
-            <td><TeaserCard /></td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-bolt"/>
+                <h4>Szybkość działania</h4>
+                <p>Realizujemy projekty w krótkim czasie, nie tracąc przy tym na jakości.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-handshake"/>
+                <h4>Indywidualne podejście</h4>
+                <p>Stawiamy na bliską współpracę, by w pełni zrozumieć Twoje potrzeby i cele.</p>
+              </RichText>
+            </td>
+            <td>
+              <RichText justify='left'>
+                <i className="fa-solid fa-shield-halved"/>
+                <h4>Wsparcie po realizacji</h4>
+                <p>Oferujemy pełną obsługę posprzedażową – od aktualizacji projektów po doradztwo w zakresie marketingu.</p>
+              </RichText>
+            </td>
           </tr>
         </tbody>
       </table>

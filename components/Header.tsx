@@ -39,7 +39,11 @@ const Header: React.FC = () => {
     <header className={`${isSticky ? 'sticky' : ''} ${isMenuOpen ? 'open' : ''}`}>
       <ContainerContent>
         <Link className="logo" href="/" onClick={handleLinkClick}>
-          <img alt="logo" src="/assets/logo.png" />
+          {isSticky ? (
+              <img alt="logo" src="/assets/logo-hazle-black.png" />
+            ) : (
+              <img alt="logo" src="/assets/logo-hazle-white.png" />
+            )}
         </Link>
         <div className="menu">
           <div className={`hamburger ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
