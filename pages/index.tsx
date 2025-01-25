@@ -12,6 +12,7 @@ import InNumbers from '@/components/inNumbers';
 import Image from 'next/image';
 import Gallery from '@/components/Gallery';
 import ContainerNoWrapper from '@/components/ContainerNoWrapper';
+import TeaserCard from '@/components/TeaserCard';
 
 const Home: React.FC = () => {
 
@@ -109,9 +110,9 @@ const Home: React.FC = () => {
         <Box justify="center" display="flex">
           <span className="badge">Strony internetowe</span>
           <span className="badge">Social media</span>
-          <span className="badge">Reklama & marketing</span>
+          <span className="badge">Reklama i marketing</span>
           <span className="badge">Design system</span>
-          <span className="badge">Logo & branding</span>
+          <span className="badge">Logo i branding</span>
           <span className="badge">Aplikacje web</span>
           <span className="badge">Projekty graficzne</span>
           <span className="badge">SEO</span>
@@ -208,6 +209,21 @@ const Home: React.FC = () => {
           </tr>
         </tbody>
       </table>
+      </Container>
+      <Container paddingBottom="5" background="neutral-900">
+        <RichText justify='center'>
+          <h3 className="center">Blog</h3>
+          <h2 className="center">Nowości i Artykuły</h2>
+          <p className="center width-700 pb-5">Najnowsze wpisy, inspiracje i porady, które pomogą Ci rozwijać Twoją markę.</p>
+        </RichText>
+        <Grid xs="1" md="2" xl="2">
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+        </Grid>
       </Container>
       <Container anchor="Sekcja-5" paddingTop="5" paddingBottom="5" background="neutral-100">
         <Accordion

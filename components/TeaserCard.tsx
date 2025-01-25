@@ -7,6 +7,7 @@ interface TeaserCardProps {
   background?: string;
   content?: string;
   imagePosition?: "top" | "bottom" | "left" | "right";
+  href?: string;
 }
 
 const TeaserCard: React.FC<TeaserCardProps> = ({
@@ -15,16 +16,19 @@ const TeaserCard: React.FC<TeaserCardProps> = ({
   background = "transparent",
   content = "Lorem ipsum",
   imagePosition = "top",
+  href,
 }) => {
+  const CardWrapper = href ? 'a' : 'div';
+
   return (
-    <div className={`teaser-card bg-${background}`}>
+    <CardWrapper href={href} className={`teaser-card bg-${background}`}>
       <div className={`teaser-card-wrapper image-${imagePosition}`}>
         <img className="teaser-image" src={imageSrc} alt={imageAlt} />
         <div className="teaser-content">
             <RichText content={content}/>
         </div>
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 
