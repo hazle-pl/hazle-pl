@@ -33,6 +33,19 @@
             border-radius: $size-3;
             background-color: var(--primary-500-05);
 
+            @media (max-width: $mobile) {
+                flex-direction: column;
+
+                .teaser-image { 
+                    width: 100% !important;
+                    aspect-ratio: 16 / 9 !important;
+                }
+
+                .teaser-content { 
+                    width: 100% !important;
+                }
+            }
+
             .teaser-image {
                width: 50%; 
                border-radius: $size-3;

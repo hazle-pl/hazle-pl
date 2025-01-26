@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <ContainerContent>
           <div className="footer-info-box">
             <div className="footer-left">
-              <img src="/assets/logo-hazle-white.png"/>
+              {/* <img src="/assets/logo-hazle-white.png"/> */}
               <RichText>
                 <p>Jesteśmy agencją interaktywną, 
                   która tworzy strony, aplikacje webowe, 
