@@ -20,6 +20,11 @@ footer {
           border-bottom: 1px solid var(--neutral-700);
           padding-bottom: $size-3;
 
+          @media (max-width: $mobile) { 
+            flex-direction: column;
+            gap: $size-3;
+          }
+
 
           .footer-left {
             max-width: 300px;
@@ -75,6 +80,11 @@ footer {
           display: flex;
           width: 100%;
           justify-content: space-between;
+
+          @media (max-width: $mobile) { 
+            flex-direction: column;
+            gap: $size-3;
+          }
 
           nav {
             display: flex;
