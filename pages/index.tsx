@@ -49,7 +49,7 @@ const Home: React.FC = () => {
         </RichText>
         <InNumbers/>
       </Container>
-      <Container anchor="how-we-work" paddingTop="5" paddingBottom="5" background="neutral-900">
+      <Container anchor="how-we-work" paddingBottom="5" background="neutral-900">
         <RichText>
           <h3 className="pb-2">Jak pracujemy?</h3>
         </RichText>
