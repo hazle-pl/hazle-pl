@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <ContainerContent>
           <div className="footer-info-box">
             <div className="footer-left">
-              {/* <img src="/assets/logo-hazle-white.png"/> */}
+              <img src="/assets/logo-hazle-white.png"/>
               <RichText>
                 <p>Jesteśmy agencją interaktywną, 
                   która tworzy strony, aplikacje webowe, 
@@ -20,9 +20,13 @@ const Footer: React.FC = () => {
             <div className="footer-right">
             <address>
               <ul>
-                <li>email: hazle-poland@gmail.com</li>
-                <li>tel: hazle-poland@gmail.com</li>
-                <li className='social-media'><a href="">Facebook</a><a href="">Instagram</a><a href="">LinkedIn</a></li>
+                <li><i className="fa-solid fa-envelope"/><p>hazle-poland@gmail.com</p></li>
+                <li><i className="fa-solid fa-phone"/><p>+48 666 666 666</p></li>
+                <li className='social-media'>
+                  <Link target="_blank" href="https://www.facebook.com/hazle.studio"><i className="fa-brands fa-facebook"/></Link>
+                  <Link target="_blank" href="https://www.instagram.com/hazle.pl/"><i className="fa-brands fa-instagram"/></Link>
+                  <Link target="_blank" href="https://www.linkedin.com/company/hazle/"><i className="fa-brands fa-linkedin-in"/></Link>
+                </li>
               </ul>
             </address>
             </div>
