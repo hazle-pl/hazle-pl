@@ -102,7 +102,7 @@ const Home: React.FC = () => {
         <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
         </Gallery>
       </ContainerNoWrapper>
-      <Container paddingTop="5" paddingBottom="5" background="neutral-900">
+      <Container anchor='services' paddingTop="5" paddingBottom="5" background="neutral-900">
         <RichText>
           <h3 className="center">Co potrafimy?</h3>
           <h2 className="pb-3 center">Możemy ci pomóc w...</h2>
@@ -216,45 +216,52 @@ const Home: React.FC = () => {
           <h2 className="center">Nowości i Artykuły</h2>
           <p className="center width-700 pb-5">Najnowsze wpisy, inspiracje i porady, które pomogą Ci rozwijać Twoją markę.</p>
         </RichText>
-        <Grid xs="1" md="2" xl="2">
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
-         <TeaserCard href="/blog/article-1" imagePosition="left"/>
+        <Grid xs="1" md="1" xl="2">
+          <TeaserCard href="/blog/article-1" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content='<h3 className="center">Branding</h3><h5>Jak Zbudować Silną Markę</h5><p>Stworzenie silnej marki to klucz do sukcesu w dzisiejszym konkurencyjnym świecie biznesu...</p>'/>
+          <TeaserCard href="/blog/article-2" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/3.png' content='<h3 className="center">SEO</h3><h5>Skuteczne Strategie SEO dla Nowoczesnych Firm</h5><p>Dowiedz się, jak optymalizować swoją stronę internetową, aby zyskać wyższą pozycję w wyszukiwarkach...</p>'/>
+          <TeaserCard href="/blog/article-3" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/4.png' content='<h3 className="center">Web Design</h3><h5>Trendy w Projektowaniu Stron Internetowych na 2025 Rok</h5><p>Odkryj najnowsze trendy, które zdominują projektowanie stron w nadchodzących latach...</p>'/>
+          <TeaserCard href="/blog/article-4" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/5.png' content='<h3 className="center">Marketing</h3><h5>Jak Skutecznie Promować Markę w Mediach Społecznościowych</h5><p>Przeczytaj o najlepszych strategiach marketingowych, które pomogą wyróżnić Twoją markę na platformach społecznościowych...</p>'/>
+          <TeaserCard href="/blog/article-5" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/6.png' content='<h3 className="center">E-commerce</h3><h5>Jak Zwiększyć Sprzedaż w Sklepie Internetowym</h5><p>Przygotuj się na zwiększenie sprzedaży dzięki sprawdzonym technikom i rozwiązaniom dla sklepów internetowych...</p>'/>
+          <TeaserCard href="/blog/article-6" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/7.png' content='<h3 className="center">Social Media</h3><h5>Strategia Social Media dla Twojej Firmy</h5><p>Sprawdź, jak skutecznie prowadzić kampanie w mediach społecznościowych, które angażują i konwertują...</p>'/>
         </Grid>
       </Container>
-      <Container anchor="Sekcja-5" paddingTop="5" paddingBottom="5" background="neutral-100">
+      <Container anchor='faq' paddingTop="5" paddingBottom="5" background="neutral-100">
+        <RichText justify='center'>
+          <h2 className="center">Pytania i Odpowiedzi</h2>
+          <p className="center width-700 pb-5">Odpowiedzi na najczęstrze pytania zadawane przez klientów</p>
+        </RichText>
         <Accordion
-          title="What is your refund policy?"
+          title="Jak długo trwa stworzenie strony internetowej?"
           faq={{
-          question: "What is your refund policy?", 
-          answer: "You can request a refund within 30 days of purchase.",
+          question: "Jak długo trwa stworzenie strony internetowej?", 
+          answer: "Czas realizacji projektu strony internetowej zależy od jego złożoności. Proste strony wizytówki możemy dostarczyć w ciągu tygodnia, natomiast bardziej zaawansowane projekty, takie jak sklepy internetowe czy aplikacje, mogą zająć od 4 do 8 tygodni.",
           }}>
-          <p>You can request a refund within 30 days of purchase.</p>
+          <p>Czas realizacji projektu strony internetowej zależy od jego złożoności. Proste strony wizytówki możemy dostarczyć w ciągu tygodnia, natomiast bardziej zaawansowane projekty, takie jak sklepy internetowe czy aplikacje, mogą zająć od 4 do 8 tygodni.</p>
         </Accordion>
         <Accordion
-          title="What is your refund policy?"
+          title="Czy mogę samodzielnie edytować zawartość swojej strony?"
           faq={{
-          question: "What is your refund policy?", 
-          answer: "You can request a refund within 30 days of purchase.",
+          question: "Czy mogę samodzielnie edytować zawartość swojej strony?", 
+          answer: "Tak, jeśli zdecydujesz się na strone zbudowaną w systemie CMS będziesz mógł w łatwy sposób edytować teksty, obrazy i inne elementy na stronie.",
           }}>
-          <p>You can request a refund within 30 days of purchase.</p>
+          <p>Tak, jeśli zdecydujesz się na strone zbudowaną w systemie CMS będziesz mógł w łatwy sposób edytować teksty, obrazy i inne elementy na stronie.</p>
         </Accordion>
-      </Container>
-      <Container anchor="Sekcja-6" paddingTop="5" paddingBottom="5" background="neutral-300">
-        <Tabs>
-          <Tab title="Tab 1">
-            <p>Content for Tab 1</p>
-          </Tab>
-          <Tab title="Tab 2">
-            <p>Content for Tab 2</p>
-          </Tab>
-          <Tab title="Tab 3">
-            <p>Content for Tab 3</p>
-          </Tab>
-        </Tabs>
+        <Accordion
+          title="Czy oferujecie wsparcie po zakończeniu projektu?"
+          faq={{
+          question: "Czy oferujecie wsparcie po zakończeniu projektu?", 
+          answer: "Oczywiście! Po zakończeniu projektu zapewniamy wsparcie techniczne, aktualizacje oraz utrzymanie strony lub aplikacji. Możesz także skorzystać z naszej oferty usług dodatkowych, takich jak marketing online czy SEO.",
+          }}>
+          <p>Oczywiście! Po zakończeniu projektu zapewniamy wsparcie techniczne, aktualizacje oraz utrzymanie strony lub aplikacji. Możesz także skorzystać z naszej oferty usług dodatkowych, takich jak marketing online czy SEO.</p>
+        </Accordion>
+        <Accordion
+          title="Czy pomagacie w promocji stron w internecie?"
+          faq={{
+          question: "Czy pomagacie w promocji stron w internecie?", 
+          answer: "Tak, oferujemy kompleksowe usługi marketingowe, w tym SEO, prowadzenie kampanii reklamowych w Google Ads i mediach społecznościowych oraz tworzenie strategii content marketingowych. Dzięki temu Twoja strona dotrze do szerszego grona odbiorców.",
+          }}>
+          <p>Tak, oferujemy kompleksowe usługi marketingowe, w tym SEO, prowadzenie kampanii reklamowych w Google Ads i mediach społecznościowych oraz tworzenie strategii content marketingowych. Dzięki temu Twoja strona dotrze do szerszego grona odbiorców.</p>
+        </Accordion>
       </Container>
     </Layout>
   );
