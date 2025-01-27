@@ -5,6 +5,10 @@ header {
     top: 0px;
     width: 100%;
 
+    @media (max-width: $mobile) { 
+      padding: $size-1 0;
+    }
+
     &.sticky {
         background-color: var(--neutral-100);
         border-bottom: 1px solid var(--neutral-300);
