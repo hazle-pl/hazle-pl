@@ -33,9 +33,10 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-nav-box">
             <nav>
-              <Link href="/portfolio">{translate('footer', 'portfolio')}</Link>
+              <Link href="/#portfolio">{translate('footer', 'portfolio')}</Link>
               <Link href="/#services">{translate('footer', 'services')}</Link>
-              <Link href="/contact">{translate('footer', 'contact')}</Link>
+              <Link href="/#contact">{translate('footer', 'contact')}</Link>
+              <Link href="/blog">{translate('default', 'blog')}</Link>
               <Link href="/#faq">{translate('footer', 'faq')}</Link>
             </nav>
             <div className="copy-box">

@@ -88,16 +88,16 @@ const Home: React.FC = () => {
           <p className='center width-700'>{translate('default', 'OurProjects2')}</p>
         </RichText>
       </Container>
-      <ContainerNoWrapper paddingTop="2" paddingBottom="5" background="neutral-100">
+      <ContainerNoWrapper anchor='portfolio' paddingTop="2" paddingBottom="5" background="neutral-100">
       <Gallery>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
-        <Image alt="Logo infra-bruk" src="/img/gallery/Superspas.jpg" height={1200} width={900}/>
+        <Image alt="Strona internetowa z ofertami wakacyjnymi UX/UI Design Tripply" src="/img/gallery/Tripply.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa firmy budowlanej z usługami pracy ziemnych UX/UI Design JP-KOP" src="/img/gallery/JPKOP.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa dla wypożyczalni samochodów UX/UI Design TurboHive" src="/img/gallery/TurboHive.webp" height={1200} width={900}/>
+        <Image alt="Aplikacja web do śledzenia sprzedaży na shopify UX/UI Design Spyshark" src="/img/gallery/Spyshark.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa dla lidera w branży spa ogrodowych UX/UI Superspas" src="/img/gallery/Superspas.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa dla firmy zajmującą się odnawialnym źródłem energii UX/UI Windly" src="/img/gallery/Windly.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa dla serwisu z filmami UX/UI Linkbase" src="/img/gallery/Linkbase.webp" height={1200} width={900}/>
+        <Image alt="Strona internetowa dla siłowni UX/UI AnyxGym" src="/img/gallery/AnyxGym.webp" height={1200} width={900}/>
         </Gallery>
       </ContainerNoWrapper>
       <Container anchor='services' paddingTop="5" paddingBottom="5" background="neutral-900">

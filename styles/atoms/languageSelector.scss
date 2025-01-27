@@ -6,6 +6,9 @@
     cursor: pointer;
     .custom-select{
       position: relative;
+       i {
+        transition: 0.25s;
+       }
   
       .country-flag{
         width: 20px;
@@ -65,6 +68,13 @@
           img{
             width: 20px;
           }
+        }
+      }
+
+      &.open {
+
+        i {
+          transform: rotate(-180deg);
         }
       }
     }
