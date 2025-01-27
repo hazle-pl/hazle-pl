@@ -2,8 +2,11 @@ import React from 'react';
 import ContainerContent from './ContentWrapper';
 import Link from 'next/link';
 import RichText from './RichText';
+import useTranslation from '@/lib/useTranslations';
 
 const Footer: React.FC = () => {
+  const { translate } = useTranslation();
+  
   return (
     <footer>
       <ContainerContent>
@@ -11,10 +14,7 @@ const Footer: React.FC = () => {
             <div className="footer-left">
               <img src="/assets/logo-hazle-white.png"/>
               <RichText>
-                <p>Jesteśmy agencją interaktywną, 
-                  która tworzy strony, aplikacje webowe, 
-                  grafikę i kampanie marketingowe, pomagając 
-                  firmom wyróżnić się w sieci.</p>
+                <p>{translate('footer', 'aboutUs')}</p>
               </RichText>
             </div>
             <div className="footer-right">
@@ -33,13 +33,13 @@ const Footer: React.FC = () => {
           </div>
           <div className="footer-nav-box">
             <nav>
-              <Link href="/portfolio">Portfolio</Link>
-              <Link href="/#services">Usługi</Link>
-              <Link href="/Kontakt">Kontakt</Link>
-              <Link href="/#faq">FAQ</Link>
+              <Link href="/portfolio">{translate('footer', 'portfolio')}</Link>
+              <Link href="/#services">{translate('footer', 'services')}</Link>
+              <Link href="/contact">{translate('footer', 'contact')}</Link>
+              <Link href="/#faq">{translate('footer', 'faq')}</Link>
             </nav>
             <div className="copy-box">
-              <p>&copy; 2025 Hazle - Wszelkie prawa zastrzeżone</p>
+              <p>&copy; 2025 Hazle - {translate('footer', 'rights')}</p>
             </div>
           </div>
       </ContainerContent>

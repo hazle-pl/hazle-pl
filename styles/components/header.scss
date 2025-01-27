@@ -9,6 +9,10 @@ header {
         background-color: var(--neutral-100);
         border-bottom: 1px solid var(--neutral-300);
 
+        .language-selector {
+          color: var(--neutral-900);
+        }
+
         .menu {
           @media (max-width: $mobile) {
             background-color: var(--neutral-100);

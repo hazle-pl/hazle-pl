@@ -1,5 +1,4 @@
 import Container from '@/components/Container';
-import { Tabs, Tab } from "@/components/Tabs";
 import Grid from '@/components/Grid';
 import Box from '@/components/Box';
 import Accordion from '@/components/Accordion';
@@ -13,23 +12,24 @@ import Image from 'next/image';
 import Gallery from '@/components/Gallery';
 import ContainerNoWrapper from '@/components/ContainerNoWrapper';
 import TeaserCard from '@/components/TeaserCard';
+import useTranslation from '@/lib/useTranslations';
 
 const Home: React.FC = () => {
-
+  const { translate } = useTranslation();
 
   return (
     <Layout>
       <HeroBanner content={`
-      <h1>Przekształcamy</br>
-      <span class="color-primary-500 italic">Marzenia</span> w Rzeczywistość</h1>
-      <p>Specjalizujemy się w projektowaniu stron internetowych, aplikacji webowych oraz kompleksowych usługach marketingowych i graficznych, od logotypów po materiały wizualne, które wzmacniają wizerunek Twojej marki.</p>
-      <a class="button primary" href="/#contact">Napisz do nas</a>
+      <h1>${translate('default', 'transform')}</br>
+      <span class="color-primary-500 italic">${translate('default', 'dreams')}</span> ${translate('default', 'inReality')}</h1>
+      <p>${translate('default', 'heroSubtitle')}</p>
+      <a class="button primary" href="/#contact">${translate('default', 'writeUs')}</a>
       `} 
       background="neutral-900" 
       size="auto"/>
       <Container paddingBottom="3" background="neutral-900">
         <RichText>
-          <h2 className="custom-center-text pb-3">Zaufali nam</h2>
+          <h2 className="custom-center-text pb-3">{translate('default', 'trustedUs')}</h2>
         </RichText>
         <Box padding='3' background='neutral-700'>
           <Grid xs="2" md="5" xl="7" justify="center">
@@ -45,23 +45,21 @@ const Home: React.FC = () => {
       </Container>
       <Container anchor="Sekcja-2" paddingTop="5" paddingBottom="5" background="neutral-900">
         <RichText>
-          <h3 className="pb-2">Hazle w liczbach</h3>
+          <h3 className="pb-2">{translate('default', 'hazleInNumbers')}</h3>
         </RichText>
         <InNumbers/>
       </Container>
       <Container anchor="how-we-work" paddingBottom="5" background="neutral-900">
         <RichText>
-          <h3 className="pb-2">Jak pracujemy?</h3>
+          <h3 className="pb-2">{translate('default', 'howWeWork')}</h3>
         </RichText>
         <Grid xs="1" md="2" xl="2">
           <RichText>
-            <p className="big">Pomysł, realizacja, publikacja – prosta droga do osiągnięcia Twoich celów online.</p>
+            <p className="big">{translate('default', 'howWeWork2')}</p>
           </RichText>
           <RichText>
-            <p className='pb-2'>Trzy etapy pozwalają nam skupić się na tym, co naprawdę ważne – od stworzenia solidnych fundamentów,
-              przez dokładne wykonanie, aż po dopracowaną publikację. Dzięki temu każdy projekt jest przemyślany i
-              dopracowany w najmniejszym szczególe. To prosty proces, który gwarantuje efekty!</p>
-              <Link className="button primary" href="#">Napisz do nas</Link>
+            <p className='pb-2'>{translate('default', 'howWeWork3')}</p>
+              <Link className="button primary" href="#">{translate('default', 'writeUs')}</Link>
           </RichText>
         </Grid>
       </Container>
@@ -69,25 +67,25 @@ const Home: React.FC = () => {
         <Grid xs="1" md="3" xl="3">
           <RichText>
             <span className="number-box">1</span>
-            <h4>Kreatywne Fundamenty</h4>
-            <p>Każdy projekt zaczyna się od inspiracji. Wspólnie analizujemy Twoje potrzeby i cele, tworząc koncepcję, która idealnie oddaje charakter Twojej marki.</p>
+            <h4>{translate('default', 'creativeFoundations')}</h4>
+            <p>{translate('default', 'creativeFoundations2')}</p>
           </RichText>
           <RichText>
             <span className="number-box">2</span>
-            <h4>Profesjonalne Wykonanie</h4>
-            <p>Przekuwamy pomysł w rzeczywistość. Projektujemy, wdrażamy i optymalizujemy, dbając o każdy detal, aby efekt był zarówno estetyczny, jak i funkcjonalny.</p>
+            <h4>{translate('default', 'ProfessionalWorkmanship')}</h4>
+            <p>{translate('default', 'ProfessionalWorkmanship2')}</p>
           </RichText>
           <RichText>
             <span className="number-box">3</span>
-            <h4>Sukces Twojej Marki</h4>
-            <p>Gdy wszystko jest gotowe, wdrażamy projekt na żywo. Zapewniamy wsparcie techniczne, by Twoja marka działała sprawnie i zyskała widoczność.</p>
+            <h4>{translate('default', 'SuccessOfYourBrand')}</h4>
+            <p>{translate('default', 'SuccessOfYourBrand2')}</p>
           </RichText>
         </Grid>
       </Container>
       <Container paddingTop="5" paddingBottom="5" background="neutral-100">
         <RichText justify='center'>
-          <h2 className="center">Nasze Projekty</h2>
-          <p className='center width-700'>Pomagamy naszym klientom zwiększać zyski dzięki przejrzystym i profesjonalnym stronom internetowym i nie tylko.</p>
+          <h2 className="center">{translate('default', 'OurProjects')}</h2>
+          <p className='center width-700'>{translate('default', 'OurProjects2')}</p>
         </RichText>
       </Container>
       <ContainerNoWrapper paddingTop="2" paddingBottom="5" background="neutral-100">
@@ -104,34 +102,34 @@ const Home: React.FC = () => {
       </ContainerNoWrapper>
       <Container anchor='services' paddingTop="5" paddingBottom="5" background="neutral-900">
         <RichText>
-          <h3 className="center">Co potrafimy?</h3>
-          <h2 className="pb-3 center">Możemy ci pomóc w...</h2>
+          <h3 className="center">{translate('default', 'WhatWeCanDo')}</h3>
+          <h2 className="pb-3 center">{translate('default', 'WeCanHelp')}</h2>
         </RichText>
         <Box justify="center" display="flex">
-          <span className="badge">Strony internetowe</span>
-          <span className="badge">Social media</span>
-          <span className="badge">Reklama i marketing</span>
-          <span className="badge">Design system</span>
-          <span className="badge">Logo i branding</span>
-          <span className="badge">Aplikacje web</span>
-          <span className="badge">Projekty graficzne</span>
-          <span className="badge">SEO</span>
-          <span className="badge">Audyt UX</span>
-          <span className="badge">Sklepy internetowe</span>
-          <span className="badge">Animacje i wideo</span>
-          <span className="badge">Analiza konkurencji</span>
+          <span className="badge">{translate('default', 'websites')}</span>
+          <span className="badge">{translate('default', 'socialMedia')}</span>
+          <span className="badge">{translate('default', 'advertisingMarketing')}</span>
+          <span className="badge">{translate('default', 'designSystem')}</span>
+          <span className="badge">{translate('default', 'logoBranding')}</span>
+          <span className="badge">{translate('default', 'webApps')}</span>
+          <span className="badge">{translate('default', 'graphicDesign')}</span>
+          <span className="badge">{translate('default', 'seo')}</span>
+          <span className="badge">{translate('default', 'uxAudit')}</span>
+          <span className="badge">{translate('default', 'ecommerce')}</span>
+          <span className="badge">{translate('default', 'animationsVideos')}</span>
+          <span className="badge">{translate('default', 'competitionAnalysis')}</span>
         </Box>
       </Container>
       <Container paddingBottom="5" background="neutral-900">
         <RichText>
-          <h3 className="pb-2">Dlaczego warto z nami wspópracować?</h3>
+          <h3 className="pb-2">{translate('default', 'whyWorkWithUs')}</h3>
         </RichText>
         <Grid xs="1" md="2" xl="2">
           <RichText>
-            <p className="big">Zapewniamy profesjonalne rozwiązania dopasowane do Twoich potrzeb.</p>
+            <p className="big">{translate('default', 'whyWorkWithUs2')}</p>
           </RichText>
           <RichText>
-            <p className='pb-2'>Twój sukces jest naszym priorytetem, dlatego dokładamy wszelkich starań, aby wspierać Cię na każdym etapie współpracy. Dzięki pracy z naszymi ekspertami będziesz mógł wyróżnić się na rynku i zyskać przewagę konkurencyjną. Nasze doświadczenie i zaangażowanie pomogą Ci osiągnąć cele, które postawisz przed sobą.</p>
+            <p className='pb-2'>{translate('default', 'whyWorkWithUs3')}</p>
           </RichText>
         </Grid>
       </Container>
@@ -142,22 +140,22 @@ const Home: React.FC = () => {
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-infinity"/>
-                <h4>Elastyczność na żądanie</h4>
-                <p>Zgłaszaj swoje potrzeby w prosty sposób, a my zajmiemy się realizacją projektów krok po kroku.</p>
+                <h4>{translate('default', 'flexibility')}</h4>
+                <p>{translate('default', 'flexibility2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-ranking-star"/>
-                <h4>Najwyższa jakość projektów</h4>
-                <p>Jesteśmy doświadczonymi specjalistami, którzy zapewnią profesjonalne wykonanie każdego zadania.</p>
+                <h4>{translate('default', 'quality')}</h4>
+                <p>{translate('default', 'quality2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
                 <i className="fa-brands fa-react"/>
-                <h4>Technologie skrojone na miarę</h4>
-                <p>Tworzymy strony i aplikacje dostosowane do Twoich wymagań, korzystając z najnowszych technologii webowych.</p>
+                <h4>{translate('default', 'technology')}</h4>
+                <p>{translate('default', 'technology2')}</p>
               </RichText>
             </td>
           </tr>
@@ -165,22 +163,22 @@ const Home: React.FC = () => {
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-list-check"/>
-                <h4>Personalizacja projektów</h4>
-                <p>Każdy projekt tworzymy od podstaw, dopasowując go do Twojej marki i potrzeb biznesowych.</p>
+                <h4>{translate('default', 'personalization')}</h4>
+                <p>{translate('default', 'personalization2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-lightbulb"/>
-                <h4>Kreatywność na najwyższym poziomie</h4>
-                <p>Proponujemy unikalne rozwiązania graficzne i marketingowe, które wyróżnią Twoją markę na rynku.</p>
+                <h4>{translate('default', 'creativity')}</h4>
+                <p>{translate('default', 'creativity2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
-                <i className="fa-solid fa-users-gear"/>
-                <h4>Doświadczenie ekspertów</h4>
-                <p>Nasz zespół to profesjonaliści z wieloletnim doświadczeniem, którzy dostarczą Ci najwyższej jakości rezultaty.</p>
+                <i className="fa-solid fa-lightbulb"/>
+                <h4>{translate('default', 'experience')}</h4>
+                <p>{translate('default', 'experience2')}</p>
               </RichText>
             </td>
           </tr>
@@ -188,22 +186,22 @@ const Home: React.FC = () => {
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-bolt"/>
-                <h4>Szybkość działania</h4>
-                <p>Realizujemy projekty w krótkim czasie, nie tracąc przy tym na jakości.</p>
+                <h4>{translate('default', 'quick')}</h4>
+                <p>{translate('default', 'quick2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-handshake"/>
-                <h4>Indywidualne podejście</h4>
-                <p>Stawiamy na bliską współpracę, by w pełni zrozumieć Twoje potrzeby i cele.</p>
+                <h4>{translate('default', 'individual')}</h4>
+                <p>{translate('default', 'individual2')}</p>
               </RichText>
             </td>
             <td>
               <RichText justify='left'>
                 <i className="fa-solid fa-shield-halved"/>
-                <h4>Wsparcie po realizacji</h4>
-                <p>Oferujemy pełną obsługę posprzedażową – od aktualizacji projektów po doradztwo w zakresie marketingu.</p>
+                <h4>{translate('default', 'support')}</h4>
+                <p>{translate('default', 'support2')}</p>
               </RichText>
             </td>
           </tr>
@@ -212,55 +210,53 @@ const Home: React.FC = () => {
       </Container>
       <Container paddingBottom="5" background="neutral-900">
         <RichText justify='center'>
-          <h3 className="center">Blog</h3>
-          <h2 className="center">Nowości i Artykuły</h2>
-          <p className="center width-700 pb-5">Najnowsze wpisy, inspiracje i porady, które pomogą Ci rozwijać Twoją markę.</p>
+          <h3 className="center">{translate('default', 'blog')}</h3>
+          <h2 className="center">{translate('default', 'news')}</h2>
+          <p className="center width-700 pb-5">{translate('default', 'news2')}</p>
         </RichText>
         <Grid xs="1" md="1" xl="2">
-          <TeaserCard href="/blog/article-1" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content='<h3 className="center">Branding</h3><h5>Jak Zbudować Silną Markę</h5><p>Stworzenie silnej marki to klucz do sukcesu w dzisiejszym konkurencyjnym świecie biznesu...</p>'/>
-          <TeaserCard href="/blog/article-2" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/3.png' content='<h3 className="center">SEO</h3><h5>Skuteczne Strategie SEO dla Nowoczesnych Firm</h5><p>Dowiedz się, jak optymalizować swoją stronę internetową, aby zyskać wyższą pozycję w wyszukiwarkach...</p>'/>
-          <TeaserCard href="/blog/article-3" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/4.png' content='<h3 className="center">Web Design</h3><h5>Trendy w Projektowaniu Stron Internetowych na 2025 Rok</h5><p>Odkryj najnowsze trendy, które zdominują projektowanie stron w nadchodzących latach...</p>'/>
-          <TeaserCard href="/blog/article-4" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/5.png' content='<h3 className="center">Marketing</h3><h5>Jak Skutecznie Promować Markę w Mediach Społecznościowych</h5><p>Przeczytaj o najlepszych strategiach marketingowych, które pomogą wyróżnić Twoją markę na platformach społecznościowych...</p>'/>
-          <TeaserCard href="/blog/article-5" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/6.png' content='<h3 className="center">E-commerce</h3><h5>Jak Zwiększyć Sprzedaż w Sklepie Internetowym</h5><p>Przygotuj się na zwiększenie sprzedaży dzięki sprawdzonym technikom i rozwiązaniom dla sklepów internetowych...</p>'/>
-          <TeaserCard href="/blog/article-6" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/7.png' content='<h3 className="center">Social Media</h3><h5>Strategia Social Media dla Twojej Firmy</h5><p>Sprawdź, jak skutecznie prowadzić kampanie w mediach społecznościowych, które angażują i konwertują...</p>'/>
+          <TeaserCard href="/blog/article-1" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-1', 'category')}</h3><h5>${translate('blog-1', 'title')}</h5><p>${translate('blog-1', 'description')}</p>`}/>
+          <TeaserCard href="/blog/article-2" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-2', 'category')}</h3><h5>${translate('blog-2', 'title')}</h5><p>${translate('blog-2', 'description')}</p>`}/>
+          <TeaserCard href="/blog/article-3" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-3', 'category')}</h3><h5>${translate('blog-3', 'title')}</h5><p>${translate('blog-3', 'description')}</p>`}/>
+          <TeaserCard href="/blog/article-4" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-4', 'category')}</h3><h5>${translate('blog-4', 'title')}</h5><p>${translate('blog-4', 'description')}</p>`}/>
         </Grid>
       </Container>
       <Container anchor='faq' paddingTop="5" paddingBottom="5" background="neutral-100">
         <RichText justify='center'>
-          <h2 className="center">Pytania i Odpowiedzi</h2>
-          <p className="center width-700 pb-5">Odpowiedzi na najczęstrze pytania zadawane przez klientów</p>
+          <h2 className="center">{translate('default', 'faq')}</h2>
+          <p className="center width-700 pb-5">{translate('default', 'faq2')}</p>
         </RichText>
         <Accordion
-          title="Jak długo trwa stworzenie strony internetowej?"
+          title={`${translate('default', 'faq-item-1-question')}`}
           faq={{
           question: "Jak długo trwa stworzenie strony internetowej?", 
           answer: "Czas realizacji projektu strony internetowej zależy od jego złożoności. Proste strony wizytówki możemy dostarczyć w ciągu tygodnia, natomiast bardziej zaawansowane projekty, takie jak sklepy internetowe czy aplikacje, mogą zająć od 4 do 8 tygodni.",
           }}>
-          <p>Czas realizacji projektu strony internetowej zależy od jego złożoności. Proste strony wizytówki możemy dostarczyć w ciągu tygodnia, natomiast bardziej zaawansowane projekty, takie jak sklepy internetowe czy aplikacje, mogą zająć od 4 do 8 tygodni.</p>
+          <p>{translate('default', 'faq-item-1-answer')}</p>
         </Accordion>
         <Accordion
-          title="Czy mogę samodzielnie edytować zawartość swojej strony?"
+          title={`${translate('default', 'faq-item-2-question')}`}
           faq={{
           question: "Czy mogę samodzielnie edytować zawartość swojej strony?", 
           answer: "Tak, jeśli zdecydujesz się na strone zbudowaną w systemie CMS będziesz mógł w łatwy sposób edytować teksty, obrazy i inne elementy na stronie.",
           }}>
-          <p>Tak, jeśli zdecydujesz się na strone zbudowaną w systemie CMS będziesz mógł w łatwy sposób edytować teksty, obrazy i inne elementy na stronie.</p>
+          <p>{translate('default', 'faq-item-2-answer')}</p>
         </Accordion>
         <Accordion
-          title="Czy oferujecie wsparcie po zakończeniu projektu?"
+          title={`${translate('default', 'faq-item-3-question')}`}
           faq={{
           question: "Czy oferujecie wsparcie po zakończeniu projektu?", 
           answer: "Oczywiście! Po zakończeniu projektu zapewniamy wsparcie techniczne, aktualizacje oraz utrzymanie strony lub aplikacji. Możesz także skorzystać z naszej oferty usług dodatkowych, takich jak marketing online czy SEO.",
           }}>
-          <p>Oczywiście! Po zakończeniu projektu zapewniamy wsparcie techniczne, aktualizacje oraz utrzymanie strony lub aplikacji. Możesz także skorzystać z naszej oferty usług dodatkowych, takich jak marketing online czy SEO.</p>
+          <p>{translate('default', 'faq-item-3-answer')}</p>
         </Accordion>
         <Accordion
-          title="Czy pomagacie w promocji stron w internecie?"
+          title={`${translate('default', 'faq-item-4-question')}`}
           faq={{
           question: "Czy pomagacie w promocji stron w internecie?", 
           answer: "Tak, oferujemy kompleksowe usługi marketingowe, w tym SEO, prowadzenie kampanii reklamowych w Google Ads i mediach społecznościowych oraz tworzenie strategii content marketingowych. Dzięki temu Twoja strona dotrze do szerszego grona odbiorców.",
           }}>
-          <p>Tak, oferujemy kompleksowe usługi marketingowe, w tym SEO, prowadzenie kampanii reklamowych w Google Ads i mediach społecznościowych oraz tworzenie strategii content marketingowych. Dzięki temu Twoja strona dotrze do szerszego grona odbiorców.</p>
+          <p>{translate('default', 'faq-item-4-answer')}</p>
         </Accordion>
       </Container>
     </Layout>
