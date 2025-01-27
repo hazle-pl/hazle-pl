@@ -3,6 +3,7 @@ import ContainerContent from './ContentWrapper';
 import Link from 'next/link';
 import RichText from './RichText';
 import useTranslation from '@/lib/useTranslations';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   const { translate } = useTranslation();
@@ -12,7 +13,7 @@ const Footer: React.FC = () => {
       <ContainerContent>
           <div className="footer-info-box">
             <div className="footer-left">
-              <img src="/assets/logo-hazle-white.png"/>
+              <Image width={100} height={50} alt="Hazle - logotyp wersja biała" src="/assets/logo-hazle-white.png"/>
               <RichText>
                 <p>{translate('footer', 'aboutUs')}</p>
               </RichText>

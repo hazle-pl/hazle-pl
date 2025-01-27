@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import ContainerContent from './ContentWrapper';
 import LanguageSelector from '@/atoms/LanguageSelector';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,9 @@ const Header: React.FC = () => {
       <ContainerContent>
         <Link className="logo" href="/" onClick={handleLinkClick}>
           {isSticky ? (
-              <img alt="logo" src="/assets/logo-hazle-black.png" />
+              <Image width={100} height={50} alt="Hazle - logotyp wersja czarna" src="/assets/logo-hazle-black.png" />
             ) : (
-              <img alt="logo" src="/assets/logo-hazle-white.png" />
+              <Image width={100} height={50} alt="Hazle - logotyp wersja biała" src="/assets/logo-hazle-white.png" />
             )}
         </Link>
         <div className="menu">
