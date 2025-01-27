@@ -1,6 +1,7 @@
 import React from "react";
 import RichText from "./RichText";
 import ContentWrapper from "./ContentWrapper";
+import useVisibilityAnimation from "@/lib/useVisibilityAnimation";
 
 interface HeroBannerProps {
   content?: string;
@@ -19,18 +20,27 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
   size = "auto",
   imageAlt = "Hero image",
 }) => {
+  const { isVisible, elementRef } = useVisibilityAnimation(0.3);
+
   return (
-    <div className={`hero-banner ${background ? `bg-${background}` : ""} ${size ? `size-${size}` : ""}`}>
-      {backgroundImage && <img className="hero-background" src={backgroundImage} alt="Background" />}
+    <div
+      ref={elementRef}
+      className={`hero-banner ${background ? `bg-${background}` : ""} ${
+        size ? `size-${size}` : ""
+      }`}
+    >
+      {backgroundImage && (
+        <img className="hero-background" src={backgroundImage} alt="Background" />
+      )}
       <ContentWrapper>
-        <div className="hero-content">
+        <div className={`hero-content ${isVisible ? "visible" : ""}`}>
           <RichText content={content} />
+          {imageSrc && (
+            <div className={`hero-image ${isVisible ? "visible" : ""}`}>
+              <img src={imageSrc} alt={imageAlt} />
+            </div>
+          )}
         </div>
-        {imageSrc && (
-          <div className="hero-image">
-            <img src={imageSrc} alt={imageAlt} />
-          </div>
-        )}
       </ContentWrapper>
     </div>
   );

@@ -3,11 +3,14 @@ import Link from 'next/link';
 import ContainerContent from './ContentWrapper';
 import LanguageSelector from '@/atoms/LanguageSelector';
 import Image from 'next/image';
+import useVisibilityAnimation from '@/lib/useVisibilityAnimation';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
+  const { isVisible, elementRef } = useVisibilityAnimation(0.3);
 
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState);
@@ -38,17 +41,17 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`${isSticky ? 'sticky' : ''} ${isMenuOpen ? 'open' : ''}`}>
+    <header ref={elementRef} className={`${isSticky ? 'sticky' : ''} ${isMenuOpen ? 'open' : ''} ${isVisible ? 'visible' : ''}`}>
       <ContainerContent>
         <Link className="logo" href="/" onClick={handleLinkClick}>
           {isSticky ? (
-              <Image width={100} height={50} alt="Hazle - logotyp wersja czarna" src="/assets/logo-hazle-black.png" />
-            ) : (
-              <Image width={100} height={50} alt="Hazle - logotyp wersja biała" src="/assets/logo-hazle-white.png" />
-            )}
+            <Image width={100} height={50} alt="Hazle - logotyp wersja czarna" src="/assets/logo-hazle-black.png" />
+          ) : (
+            <Image width={100} height={50} alt="Hazle - logotyp wersja biała" src="/assets/logo-hazle-white.png" />
+          )}
         </Link>
         <div className="menu">
-          <LanguageSelector/>
+          <LanguageSelector />
         </div>
       </ContainerContent>
     </header>

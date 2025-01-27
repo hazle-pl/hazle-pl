@@ -1,0 +1,27 @@
+
+.rich-text, header:not(.sticky), footer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.rich-text.visible, header.visible, footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+    .box {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+}
+
+
+.container.visible {
+    .box {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
