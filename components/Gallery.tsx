@@ -50,7 +50,7 @@ const Gallery: React.FC<GalleryProps> = ({ children }) => {
             key={index}
             style={{
               transform: isVisible
-                ? `translateY(${scrollY * (isColumn1Or3 ? 0.05 : -0.05)}px)`
+                ? `translateY(${scrollY * (isColumn1Or3 ? 0.01 : -0.01)}px)`
                 : 'translateY(0)',
             }}
           >
