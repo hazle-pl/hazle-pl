@@ -12,6 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <Header/>
       <main>{children}</main>
       <Footer/>
+      <script src="//code.tidio.co/yb4vkgvpquevntetabjw3kxnshn2xd1d.js" async></script>
     </>
   );
 };
