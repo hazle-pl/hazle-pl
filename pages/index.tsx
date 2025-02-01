@@ -222,7 +222,7 @@ const Home: React.FC = () => {
           <TeaserCard href="/blog/article-4" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-4', 'category')}</h3><h5>${translate('blog-4', 'title')}</h5><p>${translate('blog-4', 'description')}</p>`}/>
         </Grid>
       </Container>
-      <Container anchor='faq' paddingTop="6" paddingBottom="5" background="neutral-100">
+      <Container anchor='faq' paddingTop="5" paddingBottom="6" background="neutral-100">
         <RichText justify='center'>
           <h2 className="center">{translate('default', 'faq')}</h2>
           <p className="center width-700 pb-5">{translate('default', 'faq2')}</p>
