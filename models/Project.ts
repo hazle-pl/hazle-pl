@@ -12,14 +12,14 @@ interface IProject extends Document {
 }
 
 const ProjectSchema = new Schema<IProject>({
-  name: { type: String, required: true },
-  website: { type: String, required: true },
-  type: { type: String, required: true },
-  status: { type: String, required: true },
-  amount: { type: Number, required: true },
-  email: { type: String, required: true },
-  password: { type: String, required: true },
-  note: { type: String, required: true },
+  name: { type: String, required: false },
+  website: { type: String, required: false },
+  type: { type: String, required: false },
+  status: { type: String, required: false },
+  amount: { type: Number, required: false },
+  email: { type: String, required: false },
+  password: { type: String, required: false },
+  note: { type: String, required: false },
 });
 
 export default mongoose.models.Project || mongoose.model<IProject>('Project', ProjectSchema);

@@ -7,10 +7,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (req.method === 'POST') {
     try {
+      console.log('Received data:', req.body);
       const project = await Project.create(req.body);
       return res.status(201).json(project);
     } catch (error) {
-      return res.status(500).json({ message: 'Error adding project' });
+      console.error('Error adding project:', error);
+      return res.status(500).json({ message: 'Error adding project', error });
     }
   }
 
@@ -19,7 +21,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const projects = await Project.find();
       return res.status(200).json(projects);
     } catch (error) {
-      return res.status(500).json({ message: 'Error fetching projects' });
+      console.error('Error fetching projects:', error);
+      return res.status(500).json({ message: 'Error fetching projects', error });
     }
   }
 

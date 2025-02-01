@@ -130,10 +130,15 @@ const ProjectList = () => {
                   <td>{project.amount} PLN</td>
                   <td>{project.email}</td>
                   <td>
-                    {visiblePasswords[project._id] ? project.password : '******'}
-                    <button onClick={() => togglePasswordVisibility(project._id)}>
-                      {visiblePasswords[project._id] ? 'Ukryj' : 'Pokaż'}
-                    </button>
+                    {project.password && (
+                      <>
+                        {visiblePasswords[project._id] ? project.password : '******'}
+                        <i
+                          onClick={() => togglePasswordVisibility(project._id)}
+                          className={`fa-solid fa-eye ${visiblePasswords[project._id] ? 'fa-eye-slash' : 'fa-eye'}`}
+                        />
+                      </>
+                    )}
                   </td>
                   <td>{project.note}</td>
                   <td>

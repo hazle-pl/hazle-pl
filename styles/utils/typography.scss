@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,a,p {
     text-decoration: none;
     transition: 0.25s;
     font-size: 1.2rem;
+    display: flex;
+    gap: $size-1;
+    align-items: center;
 
     &.active {
         background-color: var(--primary-700);
