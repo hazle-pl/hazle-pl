@@ -26,9 +26,9 @@ const Footer: React.FC = () => {
                 <li><i className="fa-solid fa-envelope" /><p>hazle-poland@gmail.com</p></li>
                 <li><i className="fa-solid fa-phone" /><p>+48 666 666 666</p></li>
                 <li className="social-media">
-                  <Link target="_blank" href="https://www.facebook.com/hazle.studio"><i className="fa-brands fa-facebook" /></Link>
-                  <Link target="_blank" href="https://www.instagram.com/hazle.pl/"><i className="fa-brands fa-instagram" /></Link>
-                  <Link target="_blank" href="https://www.linkedin.com/company/hazle/"><i className="fa-brands fa-linkedin-in" /></Link>
+                  <Link target="_blank" title="Facebook" href="https://www.facebook.com/hazle.studio"><i className="fa-brands fa-facebook" /></Link>
+                  <Link target="_blank" title="Instagram" href="https://www.instagram.com/hazle.pl/"><i className="fa-brands fa-instagram" /></Link>
+                  <Link target="_blank" title="LinkedIn" href="https://www.linkedin.com/company/hazle/"><i className="fa-brands fa-linkedin-in" /></Link>
                 </li>
               </ul>
             </address>
