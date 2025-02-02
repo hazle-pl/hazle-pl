@@ -1,5 +1,6 @@
 import React from "react";
 import RichText from "./RichText";
+import Image from "next/image";
 
 interface TeaserCardProps {
   imageSrc?: string;
@@ -23,7 +24,7 @@ const TeaserCard: React.FC<TeaserCardProps> = ({
   return (
     <CardWrapper href={href} className={`teaser-card bg-${background}`}>
       <div className={`teaser-card-wrapper image-${imagePosition}`}>
-        <img className="teaser-image" src={imageSrc} alt={imageAlt} />
+        <Image className="teaser-image" width={700} height={700} src={imageSrc} alt={imageAlt} />
         <div className="teaser-content">
             <RichText content={content}/>
         </div>

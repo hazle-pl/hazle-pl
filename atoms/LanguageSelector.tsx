@@ -15,7 +15,15 @@ const LanguageSelector: React.FC = () => {
   ];
 
   useEffect(() => {
-    const storedLanguage = localStorage.getItem('language') || 'pl';
+    let storedLanguage = localStorage.getItem('language');
+    
+    if (!storedLanguage) {
+      const browserLanguage = navigator.language.split('-')[0];
+      const isSupported = supportedLanguages.some(lang => lang.code === browserLanguage);
+      storedLanguage = isSupported ? browserLanguage : 'en';
+      localStorage.setItem('language', storedLanguage);
+    }
+    
     setSelectedLanguage(storedLanguage);
 
     const handleClickOutside = (event: MouseEvent) => {

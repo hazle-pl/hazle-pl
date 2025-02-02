@@ -1,6 +1,7 @@
 import { CustomInput, CustomTextarea } from '@/atoms/CustomInputs';
 import { useState } from 'react';
 import RichText from './RichText';
+import useTranslation from '@/lib/useTranslations';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+  const { translate } = useTranslation();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -42,28 +44,30 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div className="contact-form" id="contact">
       <RichText>
-        <h1>Skontaktuj się z nami</h1>
-        <p>Masz pytania lub potrzebujesz wyceny? Skontaktuj się z nami – chętnie doradzimy i pomożemy znaleźć najlepsze rozwiązanie. Odpowiemy najszybciej, jak to możliwe!</p>
+        <h1>{translate('contact-form', 'contactUs')}</h1>
+        <p>{translate('contact-form', 'haveQuestions')}</p>
       </RichText>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
-          <CustomInput label="Imię" name="name" value={formData.name} onChange={handleChange} />
-          <CustomInput label="Email" name="email" type="email" value={formData.email} onChange={handleChange} />
+          <CustomInput label={translate('contact-form', 'name')} name="name" value={formData.name} onChange={handleChange} />
+          <CustomInput label={translate('contact-form', 'email')} name="email" type="email" value={formData.email} onChange={handleChange} />
         </div>
-        <CustomTextarea label="Treść wiadomości" name="message" value={formData.message} onChange={handleChange} />
+        <CustomTextarea label={translate('contact-form', 'message')} name="message" value={formData.message} onChange={handleChange} />
         <button type="submit" disabled={loading}>
           {loading ? (
-            'Wysyłanie...'
+            <>
+              {translate('contact-form', 'sendingMessage')}
+            </>
           ) : (
             <>
-              Wyślij wiadomość <i className="fa-solid fa-arrow-right"/>
+              {translate('contact-form', 'sendMessage')} <i className="fa-solid fa-arrow-right"/>
             </>
           )}
         </button>
       </form>
-      {success && <p>Wiadomość wysłana pomyślnie!</p>}
+      {success && <p>{translate('contact-form', 'successSending')}</p>}
       {error && <p>{error}</p>}
     </div>
   );

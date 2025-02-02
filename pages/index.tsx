@@ -60,7 +60,7 @@ const Home: React.FC = () => {
           </RichText>
           <RichText>
             <p className='pb-2'>{translate('default', 'howWeWork3')}</p>
-              <Link className="button primary" href="#">{translate('default', 'writeUs')}</Link>
+              <Link className="button primary" href="/#contact">{translate('default', 'writeUs')}</Link>
           </RichText>
         </Grid>
       </Container>
@@ -216,10 +216,10 @@ const Home: React.FC = () => {
           <p className="center width-700 pb-5">{translate('default', 'news2')}</p>
         </RichText>
         <Grid xs="1" md="1" xl="2">
-          <TeaserCard href="/blog/article-1" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-1', 'category')}</h3><h5>${translate('blog-1', 'title')}</h5><p>${translate('blog-1', 'description')}</p>`}/>
-          <TeaserCard href="/blog/article-2" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-2', 'category')}</h3><h5>${translate('blog-2', 'title')}</h5><p>${translate('blog-2', 'description')}</p>`}/>
-          <TeaserCard href="/blog/article-3" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-3', 'category')}</h3><h5>${translate('blog-3', 'title')}</h5><p>${translate('blog-3', 'description')}</p>`}/>
-          <TeaserCard href="/blog/article-4" imagePosition="left" imageSrc='https://designerup.co/blog/content/images/2023/07/2.png' content={`<h3 className="center">${translate('blog-4', 'category')}</h3><h5>${translate('blog-4', 'title')}</h5><p>${translate('blog-4', 'description')}</p>`}/>
+          <TeaserCard href="/blog/jak-zbudowac-silna-marke" imagePosition="left" imageSrc='/img/blog/branding.webp' content={`<h3 className="center">${translate('blog-1', 'category')}</h3><h5>${translate('blog-1', 'title')}</h5><p>${translate('blog-1', 'description')}</p>`}/>
+          <TeaserCard href="/blog/strategie-seo" imagePosition="left" imageSrc='/img/blog/seo.webp'  content={`<h3 className="center">${translate('blog-2', 'category')}</h3><h5>${translate('blog-2', 'title')}</h5><p>${translate('blog-2', 'description')}</p>`}/>
+          <TeaserCard href="/blog/promowanie-w-socialmedia" imagePosition="left" imageSrc='/img/blog/marketing.webp'  content={`<h3 className="center">${translate('blog-3', 'category')}</h3><h5>${translate('blog-3', 'title')}</h5><p>${translate('blog-3', 'description')}</p>`}/>
+          <TeaserCard href="/blog/trendy-w-budowaniu-stron-internetowych" imagePosition="left" imageSrc='/img/blog/websites.webp'  content={`<h3 className="center">${translate('blog-4', 'category')}</h3><h5>${translate('blog-4', 'title')}</h5><p>${translate('blog-4', 'description')}</p>`}/>
         </Grid>
       </Container>
       <Container anchor='faq' paddingTop="5" paddingBottom="6" background="neutral-100">

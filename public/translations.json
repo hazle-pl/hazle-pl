@@ -80,6 +80,16 @@
       "contact": "Contact",
       "faq": "FAQ"
     },
+    "contact-form": {
+      "contactUs": "Contact with us",
+      "haveQuestions": "Do you have any questions or need a quote? Contact us – we will be happy to advise and help you find the best solution. We will respond as soon as possible!",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "sendMessage": "Send message",
+      "sendingMessage": "Message is sending",
+      "successSending": "Message sent successfully!"
+    },
     "blog-1": {
       "category": "Branding",
       "title": "How to Build a Strong Brand",
@@ -181,6 +191,16 @@
       "services": "Services",
       "contact": "Contact",
       "faq": "FAQ"
+    },
+    "contact-form": {
+      "contactUs": "Contactez-nous",
+      "haveQuestions": "Vous avez des questions ou besoin d'un devis ? Contactez-nous – nous serons ravis de vous conseiller et de vous aider à trouver la meilleure solution. Nous vous répondrons dès que possible !",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "sendMessage": "Envoyer le message",
+      "sendingMessage": "Envoi du message en cours",
+      "successSending": "Message envoyé avec succès !"
     },
     "blog-1": {
       "category": "Branding",
@@ -284,6 +304,16 @@
       "contact": "Contacto",
       "faq": "FAQ"
     },
+    "contact-form": {
+      "contactUs": "Contáctanos",
+      "haveQuestions": "¿Tienes preguntas o necesitas un presupuesto? Contáctanos – estaremos encantados de asesorarte y ayudarte a encontrar la mejor solución. ¡Te responderemos lo antes posible!",
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "sendMessage": "Enviar mensaje",
+      "sendingMessage": "Enviando mensaje",
+      "successSending": "¡Mensaje enviado con éxito!"
+    },
     "blog-1": {
       "category": "Branding",
       "title": "Cómo construir una marca fuerte",
@@ -385,6 +415,16 @@
       "services": "Usługi",
       "contact": "Kontakt",
       "faq": "FAQ"
+    },
+    "contact-form": {
+      "contactUs": "Skontaktuj się z nami",
+      "haveQuestions": "Masz pytania lub potrzebujesz wyceny? Skontaktuj się z nami – chętnie doradzimy i pomożemy znaleźć najlepsze rozwiązanie. Odpowiemy tak szybko, jak to możliwe!",
+      "name": "Imię",
+      "email": "Email",
+      "message": "Wiadomość",
+      "sendMessage": "Wyślij wiadomość",
+      "sendingMessage": "Wysyłanie wiadomości",
+      "successSending": "Wiadomość została wysłana pomyślnie!"
     },
     "blog-1": {
       "category": "Branding",
@@ -488,6 +528,16 @@
       "contact": "Kontakt",
       "faq": "FAQ"
     },
+    "contact-form": {
+      "contactUs": "Kontaktieren Sie uns",
+      "haveQuestions": "Haben Sie Fragen oder benötigen Sie ein Angebot? Kontaktieren Sie uns – wir beraten Sie gerne und helfen Ihnen, die beste Lösung zu finden. Wir antworten so schnell wie möglich!",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "sendMessage": "Nachricht senden",
+      "sendingMessage": "Nachricht wird gesendet",
+      "successSending": "Nachricht erfolgreich gesendet!"
+    },
     "blog-1": {
       "category": "Branding",
       "title": "Wie baut man eine starke Marke auf?",
@@ -589,6 +639,16 @@
       "services": "Услуги",
       "contact": "Контакты",
       "faq": "FAQ"
+    },
+    "contact-form": {
+      "contactUs": "Свяжитесь с нами",
+      "haveQuestions": "У вас есть вопросы или нужен расчет? Свяжитесь с нами – мы будем рады проконсультировать вас и помочь найти лучшее решение. Мы ответим как можно скорее!",
+      "name": "Имя",
+      "email": "Электронная почта",
+      "message": "Сообщение",
+      "sendMessage": "Отправить сообщение",
+      "sendingMessage": "Отправка сообщения",
+      "successSending": "Сообщение успешно отправлено!"
     },
     "blog-1": {
       "category": "Брендинг",

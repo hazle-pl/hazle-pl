@@ -4,21 +4,13 @@ import ContainerContent from './ContentWrapper';
 import LanguageSelector from '@/atoms/LanguageSelector';
 import Image from 'next/image';
 import useVisibilityAnimation from '@/lib/useVisibilityAnimation';
+import router from 'next/router';
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   const { isVisible, elementRef } = useVisibilityAnimation(0.3);
 
-  const toggleMenu = () => {
-    setIsMenuOpen((prevState) => !prevState);
-  };
-
-  const toggleSubMenu = () => {
-    setIsSubMenuOpen((prevState) => !prevState);
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,10 +30,11 @@ const Header: React.FC = () => {
 
   const handleLinkClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    router.push('/');
   };
 
   return (
-    <header ref={elementRef} className={`${isSticky ? 'sticky' : ''} ${isMenuOpen ? 'open' : ''} ${isVisible ? 'visible' : ''}`}>
+    <header ref={elementRef} className={`${isSticky ? 'sticky' : ''} ${isVisible ? 'visible' : ''}`}>
       <ContainerContent>
         <Link className="logo" href="/" onClick={handleLinkClick}>
           {isSticky ? (
