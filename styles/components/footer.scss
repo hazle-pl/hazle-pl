@@ -90,6 +90,7 @@ footer {
           nav {
             display: flex;
             gap: $size-2;
+            flex-wrap: wrap;
 
             a {
               color: var(--neutral-100);
