@@ -63,33 +63,42 @@ const HowPromoteBrandOnSocialMedia: React.FC = () => {
           </Container>
           
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/marketing1.png' content={`<h2>1. Twórz wartościowy content</h2>
+          <RichText>
+            <h2>1. Twórz wartościowy content</h2>
             <p>Treści, które publikujesz, muszą być interesujące i angażujące. Skup się na tym, co naprawdę interesuje Twoich odbiorców. Wysokiej jakości zdjęcia, filmy, infografiki oraz wartościowe artykuły budują wizerunek Twojej marki i zachęcają do interakcji.</p>
-            <p>Pamiętaj, aby dostarczać treści, które nie tylko promują Twoją markę, ale również edukują, inspirują i bawią Twoich odbiorców. Regularność i spójność w publikowaniu treści ma kluczowe znaczenie dla budowania zaangażowanej społeczności.</p>`}/>
+            <p>Pamiętaj, aby dostarczać treści, które nie tylko promują Twoją markę, ale również edukują, inspirują i bawią Twoich odbiorców. Regularność i spójność w publikowaniu treści ma kluczowe znaczenie dla budowania zaangażowanej społeczności.</p></RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="right" imageSrc='https://example.com/marketing2.png' content={`<h2>2. Zrozum swoją grupę docelową</h2>
+            <RichText>
+            <h2>2. Zrozum swoją grupę docelową</h2>
             <p>Aby skutecznie promować markę w mediach społecznościowych, musisz wiedzieć, do kogo mówisz. Zdefiniowanie profilu swojej grupy docelowej pomoże Ci lepiej dopasować komunikację do jej potrzeb i oczekiwań.</p>
-            <p>Badania rynku oraz analiza preferencji Twoich odbiorców pomogą Ci stworzyć treści, które przyciągną ich uwagę. Pamiętaj, że różne grupy odbiorców preferują różne platformy i style komunikacji, więc dostosuj swoje działania do specyfiki każdej z nich.</p>`}/>
+            <p>Badania rynku oraz analiza preferencji Twoich odbiorców pomogą Ci stworzyć treści, które przyciągną ich uwagę. Pamiętaj, że różne grupy odbiorców preferują różne platformy i style komunikacji, więc dostosuj swoje działania do specyfiki każdej z nich.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/marketing3.png' content={`<h2>3. Angażuj swoją społeczność</h2>
+            <RichText>
+            <h2>3. Angażuj swoją społeczność</h2>
             <p>Media społecznościowe to nie tylko miejsce, gdzie publikujesz posty. To również platforma do interakcji z Twoimi odbiorcami. Angażuj swoją społeczność poprzez odpowiedzi na komentarze, organizowanie konkursów, czy nawet prośby o opinię.</p>
-            <p>Im bardziej zaangażujesz swoich followersów, tym większą lojalność zbudujesz. Udzielaj się w dyskusjach, bądź autentyczny i pokaż, że zależy Ci na zdaniu swoich klientów.</p>`}/>
+            <p>Im bardziej zaangażujesz swoich followersów, tym większą lojalność zbudujesz. Udzielaj się w dyskusjach, bądź autentyczny i pokaż, że zależy Ci na zdaniu swoich klientów.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="right" imageSrc='https://example.com/marketing4.png' content={`<h2>4. Wykorzystaj reklamy płatne</h2>
+            <RichText>
+            <h2>4. Wykorzystaj reklamy płatne</h2>
             <p>Chociaż organiczny zasięg w mediach społecznościowych jest ważny, płatne kampanie reklamowe mogą znacząco zwiększyć zasięg Twojej marki. Skorzystaj z narzędzi takich jak Facebook Ads, Instagram Ads czy LinkedIn Ads, aby dotrzeć do szerokiego grona odbiorców.</p>
-            <p>Precyzyjne targetowanie, dobrze dopasowane reklamy i regularne analizy wyników pozwolą Ci maksymalizować efektywność kampanii reklamowych.</p>`}/>
+            <p>Precyzyjne targetowanie, dobrze dopasowane reklamy i regularne analizy wyników pozwolą Ci maksymalizować efektywność kampanii reklamowych.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/marketing5.png' content={`<h2>5. Analizuj wyniki i dostosowuj strategię</h2>
+           <RichText>
+           <h2>5. Analizuj wyniki i dostosowuj strategię</h2>
             <p>Aby Twoje działania marketingowe były skuteczne, musisz regularnie analizować wyniki swoich kampanii. Wykorzystuj narzędzia analityczne do monitorowania wyników i dowiedz się, które działania przynoszą najlepsze efekty.</p>
-            <p>Dzięki analizie możesz dostosować swoją strategię, skupić się na najefektywniejszych kanałach i optymalizować procesy, aby Twoje działania marketingowe były jeszcze bardziej skuteczne.</p>`}/>
+            <p>Dzięki analizie możesz dostosować swoją strategię, skupić się na najefektywniejszych kanałach i optymalizować procesy, aby Twoje działania marketingowe były jeszcze bardziej skuteczne.</p>
+           </RichText>
           </Container>
         </article>
       </Layout>

@@ -63,6 +63,8 @@
       "news2": "The latest entries, inspirations and tips that will help you develop your brand",
       "faq": "Questions and Answers",
       "faq2": "Answers to the most common questions asked by customers",
+      "pricing": "Pricing",
+      "realization-process": "Realization-process",
       "faq-item-1-question": "How long does it take to create a website?",
       "faq-item-1-answer": "The implementation time of a website project depends on its complexity. We can deliver simple business card pages within a week, while more advanced projects, such as online stores or applications, may take from 4 to 8 weeks.",
       "faq-item-2-question": "Can I edit the content of my website myself?",
@@ -78,7 +80,8 @@
       "portfolio": "Portfolio",
       "services": "Services",
       "contact": "Contact",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Documents"
     },
     "contact-form": {
       "contactUs": "Contact with us",
@@ -109,6 +112,11 @@
       "category": "Web Design",
       "title": "Trends in Website Design for 2025",
       "description": "Discover the latest trends that will dominate web design in the coming years..."
+    },
+    "404": {
+      "404-error": "404 - Page not found",
+      "oops": "Oops! The page you are looking for does not exist.",
+      "home": "Go back home"
     }
   },
   "fr": {
@@ -175,6 +183,8 @@
       "news2": "Les dernières publications, inspirations et conseils pour développer votre marque",
       "faq": "Questions et réponses",
       "faq2": "Réponses aux questions les plus fréquentes posées par nos clients",
+      "pricing": "Tarification",
+      "realization-process": "Processus de réalisation",
       "faq-item-1-question": "Combien de temps faut-il pour créer un site web ?",
       "faq-item-1-answer": "Le délai de réalisation d'un site web dépend de sa complexité. Nous pouvons livrer des sites simples en une semaine, tandis que les projets plus avancés, comme les boutiques en ligne ou les applications, peuvent prendre entre 4 et 8 semaines.",
       "faq-item-2-question": "Puis-je modifier le contenu de mon site moi-même ?",
@@ -190,7 +200,8 @@
       "portfolio": "Portfolio",
       "services": "Services",
       "contact": "Contact",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Documents"
     },
     "contact-form": {
       "contactUs": "Contactez-nous",
@@ -221,6 +232,11 @@
       "category": "Design Web",
       "title": "Tendances en design web pour 2025",
       "description": "Découvrez les dernières tendances qui domineront le design web dans les années à venir..."
+    },
+    "404": {
+      "404-error": "404 - Page non trouvée",
+      "oops": "Oups! La page que vous recherchez n'existe pas.",
+      "home": "Retour à l'accueil"
     }
   },
   "es": {
@@ -287,6 +303,8 @@
       "news2": "Últimas publicaciones, inspiraciones y consejos para desarrollar tu marca",
       "faq": "Preguntas frecuentes",
       "faq2": "Respuestas a las preguntas más comunes hechas por nuestros clientes",
+      "pricing": "Precios",
+      "realization-process": "Proceso de realización",
       "faq-item-1-question": "¿Cuánto tiempo lleva crear un sitio web?",
       "faq-item-1-answer": "El tiempo necesario para crear un sitio web depende de su complejidad. Podemos entregar sitios simples en una semana, mientras que los proyectos más avanzados, como tiendas en línea o aplicaciones, pueden tardar entre 4 y 8 semanas.",
       "faq-item-2-question": "¿Puedo modificar el contenido de mi sitio yo mismo?",
@@ -302,7 +320,8 @@
       "portfolio": "Portafolio",
       "services": "Servicios",
       "contact": "Contacto",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Documentos"
     },
     "contact-form": {
       "contactUs": "Contáctanos",
@@ -333,6 +352,11 @@
       "category": "Diseño Web",
       "title": "Tendencias en diseño web para 2025",
       "description": "Descubre las últimas tendencias que dominarán el diseño web en los próximos años..."
+    },
+    "404": {
+      "404-error": "404 - Página no encontrada",
+      "oops": "¡Vaya! La página que buscas no existe.",
+      "home": "Volver al inicio"
     }
   },
   "pl": {
@@ -399,6 +423,8 @@
       "news2": "Najnowsze wpisy, inspiracje i porady dotyczące rozwoju Twojej marki",
       "faq": "FAQ",
       "faq2": "Odpowiedzi na najczęściej zadawane pytania naszych klientów",
+      "pricing": "Cennik",
+      "realization-process": "Proces realizacji",
       "faq-item-1-question": "Ile czasu zajmuje stworzenie strony internetowej?",
       "faq-item-1-answer": "Czas potrzebny na stworzenie strony zależy od jej złożoności. Proste strony możemy dostarczyć w tydzień, natomiast bardziej zaawansowane projekty, takie jak sklepy internetowe czy aplikacje, mogą zająć od 4 do 8 tygodni.",
       "faq-item-2-question": "Czy mogę samodzielnie edytować treść swojej strony?",
@@ -414,7 +440,8 @@
       "portfolio": "Portfolio",
       "services": "Usługi",
       "contact": "Kontakt",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Dokumenty"
     },
     "contact-form": {
       "contactUs": "Skontaktuj się z nami",
@@ -445,6 +472,11 @@
       "category": "Projektowanie stron",
       "title": "Trendy w projektowaniu stron internetowych na rok 2025",
       "description": "Dowiedz się, jakie trendy zdominują projektowanie stron w najbliższych latach..."
+    },
+    "404": {
+      "404-error": "404 - Strona nie znaleziona",
+      "oops": "Ups! Strona, której szukasz, nie istnieje.",
+      "home": "Wróć do strony głównej"
     }
   },
   "de": {
@@ -511,6 +543,8 @@
       "news2": "Die neuesten Einträge, Inspirationen und Tipps für die Entwicklung Ihrer Marke",
       "faq": "FAQ",
       "faq2": "Antworten auf die häufigsten Fragen unserer Kunden",
+      "pricing": "Preisgestaltung",
+      "realization-process": "Realisierungsprozess",
       "faq-item-1-question": "Wie lange dauert es, eine Website zu erstellen?",
       "faq-item-1-answer": "Die Zeit, die für die Erstellung einer Website benötigt wird, hängt von ihrer Komplexität ab. Einfache Websites können wir innerhalb einer Woche liefern, während komplexere Projekte, wie Online-Shops oder Anwendungen, 4 bis 8 Wochen in Anspruch nehmen können.",
       "faq-item-2-question": "Kann ich den Inhalt meiner Website selbst bearbeiten?",
@@ -526,7 +560,8 @@
       "portfolio": "Portfolio",
       "services": "Dienstleistungen",
       "contact": "Kontakt",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Dokumente"
     },
     "contact-form": {
       "contactUs": "Kontaktieren Sie uns",
@@ -557,6 +592,11 @@
       "category": "Webdesign",
       "title": "Trends im Webdesign für 2025",
       "description": "Entdecken Sie, welche Trends in den kommenden Jahren das Webdesign dominieren werden..."
+    },
+    "404": {
+      "404-error": "404 - Seite nicht gefunden",
+      "oops": "Ups! Die Seite, nach der du suchst, existiert nicht.",
+      "home": "Zurück zur Startseite"
     }
   },
   "ru": {
@@ -623,6 +663,8 @@
       "news2": "Последние записи, вдохновение и советы для развития вашего бренда",
       "faq": "FAQ",
       "faq2": "Ответы на самые частые вопросы наших клиентов",
+      "pricing": "Цены",
+      "realization-process": "Процесс реализации",
       "faq-item-1-question": "Сколько времени занимает создание сайта?",
       "faq-item-1-answer": "Время, необходимое для создания сайта, зависит от его сложности. Простые сайты могут быть готовы в течение недели, а более сложные проекты, такие как интернет-магазины или приложения, занимают от 4 до 8 недель.",
       "faq-item-2-question": "Могу ли я сам редактировать контент на своём сайте?",
@@ -638,7 +680,8 @@
       "portfolio": "Портфолио",
       "services": "Услуги",
       "contact": "Контакты",
-      "faq": "FAQ"
+      "faq": "FAQ",
+      "documents": "Документы"
     },
     "contact-form": {
       "contactUs": "Свяжитесь с нами",
@@ -669,6 +712,11 @@
       "category": "Веб-дизайн",
       "title": "Тренды веб-дизайна на 2025 год",
       "description": "Узнайте, какие тренды будут доминировать в веб-дизайне в ближайшие годы..."
+    },
+    "404": {
+      "404-error": "404 - Страница не найдена",
+      "oops": "Ой! Страница, которую вы ищете, не существует.",
+      "home": "Вернуться на главную"
     }
   }
 }

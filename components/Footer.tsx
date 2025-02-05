@@ -41,6 +41,7 @@ const Footer: React.FC = () => {
             <Link href="/#contact">{translate('footer', 'contact')}</Link>
             <Link href="/blog">{translate('default', 'blog')}</Link>
             <Link href="/#faq">{translate('footer', 'faq')}</Link>
+            <Link href="/documents">{translate('footer', 'documents')}</Link>
           </nav>
           <div className="copy-box">
             <p>&copy; 2025 Hazle - {translate('footer', 'rights')}</p>

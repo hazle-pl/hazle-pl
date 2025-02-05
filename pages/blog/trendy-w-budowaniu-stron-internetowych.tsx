@@ -37,13 +37,13 @@ const WebDesignTrends2025: React.FC = () => {
           "name": "Hazle",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://hazle.pl/logo.png" // Uzupełnij link do logo
+            "url": "https://hazle.pl/logo.png"
           }
         },
-        "datePublished": "2025-02-02", // Wstaw aktualną datę publikacji
-        "dateModified": "2025-02-02", // Wstaw datę ostatniej modyfikacji
+        "datePublished": "2025-02-02",
+        "dateModified": "2025-02-02",
         "description": "Dowiedz się, jak zbudować silną markę! Kompletny przewodnik o brandingu, strategii marki i identyfikacji wizualnej. Sprawdź najlepsze praktyki.",
-        "image": "https://hazle.pl/blog/article-image.jpg", // Uzupełnij link do obrazu artykułu
+        "image": "https://hazle.pl/blog/article-image.jpg",
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://hazle.pl/jak-zbudowac-silna-marke"
@@ -63,33 +63,41 @@ const WebDesignTrends2025: React.FC = () => {
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/webdesign1.png' content={`<h2>1. Minimalizm i prostota</h2>
+            <RichText>
+            <h2>1. Minimalizm i prostota</h2>
             <p>Minimalizm w projektowaniu stron zyska na znaczeniu. Strony internetowe będą coraz bardziej stonowane, z mniejszą ilością zbędnych elementów. Przestronność, proste układy i ograniczona paleta kolorów staną się standardem, co ułatwi użytkownikom nawigację i poprawi komfort korzystania z witryny.</p>
-            <p>Minimalistyczny design sprawia, że strona jest bardziej przejrzysta i szybka w ładowaniu, co ma kluczowe znaczenie w kontekście doświadczeń użytkowników i SEO.</p>`}/>
+            <p>Minimalistyczny design sprawia, że strona jest bardziej przejrzysta i szybka w ładowaniu, co ma kluczowe znaczenie w kontekście doświadczeń użytkowników i SEO.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="right" imageSrc='https://example.com/webdesign2.png' content={`<h2>2. Responsywność na najwyższym poziomie</h2>
+            <RichText><h2>2. Responsywność na najwyższym poziomie</h2>
             <p>W 2025 roku projektowanie responsywnych stron internetowych będzie kluczowe. Użytkownicy korzystają z coraz większej liczby urządzeń, od smartfonów po tablety i laptopy, dlatego strony muszą dostosowywać się do każdego typu ekranu.</p>
-            <p>Warto zwrócić uwagę na tzw. mobile-first design, czyli projektowanie z myślą o urządzeniach mobilnych, a dopiero potem dostosowanie do innych platform. Użytkownicy oczekują szybkiego ładowania, prostoty nawigacji i doskonałej jakości na każdym urządzeniu.</p>`}/>
+            <p>Warto zwrócić uwagę na tzw. mobile-first design, czyli projektowanie z myślą o urządzeniach mobilnych, a dopiero potem dostosowanie do innych platform. Użytkownicy oczekują szybkiego ładowania, prostoty nawigacji i doskonałej jakości na każdym urządzeniu.</p></RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/webdesign3.png' content={`<h2>3. Mikro-interakcje</h2>
+            <RichText>
+            <h2>3. Mikro-interakcje</h2>
             <p>Mikro-interakcje to małe animacje, które sprawiają, że strona wydaje się bardziej interaktywna i angażująca. W 2025 roku te detale staną się kluczowym elementem w projektowaniu UX/UI.</p>
-            <p>Przykłady mikro-interakcji to animacje przy kliknięciu, efekt hover, płynne przejścia między sekcjami strony czy dynamiczne powiadomienia. Dzięki nim strona staje się bardziej żywa, a użytkownicy czują się bardziej zaangażowani.</p>`}/>
+            <p>Przykłady mikro-interakcji to animacje przy kliknięciu, efekt hover, płynne przejścia między sekcjami strony czy dynamiczne powiadomienia. Dzięki nim strona staje się bardziej żywa, a użytkownicy czują się bardziej zaangażowani.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="right" imageSrc='https://example.com/webdesign4.png' content={`<h2>4. Sztuczna inteligencja w designie</h2>
+            <RichText>
+            <h2>4. Sztuczna inteligencja w designie</h2>
             <p>Sztuczna inteligencja (AI) będzie coraz częściej wykorzystywana w procesie projektowania stron internetowych. AI pomoże w tworzeniu bardziej spersonalizowanych doświadczeń użytkowników, automatycznym dostosowywaniu treści czy optymalizacji UX.</p>
-            <p>Przykładem zastosowania AI może być generowanie dynamicznych treści na stronie w zależności od zachowań użytkownika lub inteligentne rekomendacje produktów w sklepach internetowych.</p>`}/>
+            <p>Przykładem zastosowania AI może być generowanie dynamicznych treści na stronie w zależności od zachowań użytkownika lub inteligentne rekomendacje produktów w sklepach internetowych.</p>
+            </RichText>
           </Container>
 
           <Container paddingBottom='3' paddingTop='3'>
-            <TeaserCard imagePosition="left" imageSrc='https://example.com/webdesign5.png' content={`<h2>5. Dark mode i tryb nocny</h2>
+           <RichText>
+           <h2>5. Dark mode i tryb nocny</h2>
             <p>Tryb ciemny (dark mode) będzie stawał się coraz bardziej popularny. Dzięki niemu użytkownicy mogą korzystać ze stron internetowych w słabym oświetleniu, co zmniejsza zmęczenie oczu i poprawia komfort użytkowania.</p>
-            <p>Projektanci powinni zadbać o to, aby ich strony działały dobrze zarówno w trybie jasnym, jak i ciemnym, tworząc odpowiednią paletę kolorów i dopasowując kontrasty do różnych trybów wyświetlania.</p>`}/>
+            <p>Projektanci powinni zadbać o to, aby ich strony działały dobrze zarówno w trybie jasnym, jak i ciemnym, tworząc odpowiednią paletę kolorów i dopasowując kontrasty do różnych trybów wyświetlania.</p>
+           </RichText>
           </Container>
         </article>
       </Layout>

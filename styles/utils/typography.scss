@@ -104,6 +104,24 @@ h1,h2,h3,h4,h5,h6,a,p {
         margin-bottom: $size-2;
     }
 
+    ul {
+        list-style: square;
+        margin: 0;
+        padding: $size-2;
+        font-size: 1.2rem;
+        color: var(--neutral-300);
+        li {
+            &::marker {
+                color: var(--primary-500);
+            }
+
+            a {
+                color: var(--neutral-100);
+                text-decoration: none;
+            }
+        }
+    }
+
     h1 {
         font-size: 6rem;
         margin-bottom: $size-1;
