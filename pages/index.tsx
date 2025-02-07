@@ -38,15 +38,15 @@ const Home: React.FC = () => {
         <RichText>
           <h2 className="custom-center-text pb-3">{translate('default', 'trustedUs')}</h2>
         </RichText>
-        <Box padding='3' background='neutral-700'>
+        <Box padding='3' background='neutral-700-50'>
           <Grid xs="2" md="5" xl="7" justify="center">
               <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-infra-bruk.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-awt.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-mogilno-run.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-superspas.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-turbohive.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-jp-kop.png" height={50} width={100}/>
-              <Image className="trusted-logo" alt="Logo infra-bruk" src="/img/zaufali-nam/logo-pk-bruk.svg" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo firmy jacuzzi AWT EAGO" src="/img/zaufali-nam/logo-awt.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo restauracji zenrolls" src="/img/zaufali-nam/logo-zenrolls.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo superspas jacuzzi" src="/img/zaufali-nam/logo-superspas.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo wypożyczalni aut turbohive" src="/img/zaufali-nam/logo-turbohive.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo firmy budowlanej jp kop" src="/img/zaufali-nam/logo-jp-kop.png" height={50} width={100}/>
+              <Image className="trusted-logo" alt="Logo frimy brukarskiej pk bruk" src="/img/zaufali-nam/logo-pk-bruk.svg" height={50} width={100}/>
           </Grid>
         </Box>
       </Container>
@@ -96,15 +96,15 @@ const Home: React.FC = () => {
         </RichText>
       </Container>
       <ContainerNoWrapper anchor='portfolio' paddingTop="2" paddingBottom="5" background="neutral-100">
-      <Gallery>
-        <Image alt="Strona internetowa z ofertami wakacyjnymi UX/UI Design Tripply" src="/img/gallery/Tripply.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa firmy budowlanej z usługami pracy ziemnych UX/UI Design Gravix" src="/img/gallery/Gravix.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla wypożyczalni samochodów UX/UI Design TurboHive" src="/img/gallery/TurboHive.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla architekta budynków UX/UI Design Dwellio" src="/img/gallery/Dwellio.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla lidera w branży spa ogrodowych UX/UI Superspas" src="/img/gallery/Superspas.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla firmy zajmującą się odnawialnym źródłem energii UX/UI Windly" src="/img/gallery/Windly.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla restauracji sushi UX/UI Zenrolls" src="/img/gallery/Zenrolls.webp" height={225} width={400}/>
-        <Image alt="Strona internetowa dla siłowni UX/UI AnyxGym" src="/img/gallery/AnyxGym.webp" height={225} width={400}/>
+        <Gallery>
+          <Image alt="Strona internetowa z ofertami wakacyjnymi UX/UI Design Tripply" src="/img/gallery/Tripply.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa firmy budowlanej z usługami pracy ziemnych UX/UI Design Gravix" src="/img/gallery/Gravix.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla wypożyczalni samochodów UX/UI Design TurboHive" src="/img/gallery/TurboHive.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla architekta budynków UX/UI Design Dwellio" src="/img/gallery/Dwellio.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla lidera w branży spa ogrodowych UX/UI Superspas" src="/img/gallery/Superspas.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla firmy zajmującą się odnawialnym źródłem energii UX/UI Windly" src="/img/gallery/Windly.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla restauracji sushi UX/UI Zenrolls" src="/img/gallery/Zenrolls.webp" height={225} width={400}/>
+          <Image alt="Strona internetowa dla siłowni UX/UI AnyxGym" src="/img/gallery/AnyxGym.webp" height={225} width={400}/>
         </Gallery>
       </ContainerNoWrapper>
       <Container anchor='services' paddingTop="5" paddingBottom="5" background="neutral-900">

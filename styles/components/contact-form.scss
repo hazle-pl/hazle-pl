@@ -26,6 +26,11 @@
         gap: $size-3;
         flex-direction: column;
         position: relative;
+        z-index: 10;
+        
+        button {
+            z-index: 10;
+        }
 
         label {
             position: relative;
@@ -50,6 +55,10 @@
             filter: blur(150px);
             opacity: 0.1;
             z-index: 1;
+
+            @media (max-width: $mobile) { 
+                display: none;
+            }
         }
 
         .input-group {

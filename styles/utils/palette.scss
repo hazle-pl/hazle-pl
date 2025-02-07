@@ -19,6 +19,7 @@
     --neutral-300: rgb(200, 200, 200);
     --neutral-500: rgb(112, 112, 112);
     --neutral-700: rgb(80, 80, 80);
+    --neutral-700-50: rgba(80, 80, 80, 0.3);
     --neutral-800: #1a1b06;
     --neutral-900: #111204;
     --neutral-1000: rgb(0, 0, 0);
@@ -81,6 +82,10 @@
 
 .bg-neutral-700 {
     background-color: var(--neutral-700);
+}
+
+.bg-neutral-700-50 {
+    background-color: var(--neutral-700-50);
 }
 
 .bg-neutral-900 {
