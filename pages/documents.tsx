@@ -20,7 +20,7 @@ const Documents: React.FC = () => {
         <RichText>
             <ul>
                 <li><Link href="/pdf/Cennik.pdf">{translate('default', 'pricing')}</Link></li>
-                <li><Link href="/pdf/Cennik.pdf">{translate('default', 'realization-process')}</Link></li>
+                <li><Link href="/pdf/Proces-realizacji.pdf">{translate('default', 'realization-process')}</Link></li>
             </ul>
         </RichText>
       </Container>
